@@ -1,0 +1,454 @@
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: warning: Skipping data file with no valid points
+
+plot "/var/www/basic-flask-app/moistureData.txt" using 1:2 with linespoints
+                                                                           ^
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: x range is invalid
+
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: warning: Skipping data file with no valid points
+
+plot "/var/www/basic-flask-app/moistureData.txt" using 1:2 with linespoints
+                                                                           ^
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: x range is invalid
+
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.65899e+09:1.69251e+09]
+Warning: empty y range [44:44], adjusting to [43.56:44.44]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.65899e+09:1.69251e+09]
+Warning: empty y range [44:44], adjusting to [43.56:44.44]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.65899e+09:1.69251e+09]
+Warning: empty y range [44:44], adjusting to [43.56:44.44]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.65899e+09:1.69251e+09]
+Warning: empty y range [44:44], adjusting to [43.56:44.44]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.65899e+09:1.69251e+09]
+Warning: empty y range [44:44], adjusting to [43.56:44.44]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.65899e+09:1.69251e+09]
+Warning: empty y range [44:44], adjusting to [43.56:44.44]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.65899e+09:1.69251e+09]
+Warning: empty y range [44:44], adjusting to [43.56:44.44]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.65899e+09:1.69251e+09]
+Warning: empty y range [44:44], adjusting to [43.56:44.44]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.65899e+09:1.69251e+09]
+Warning: empty y range [44:44], adjusting to [43.56:44.44]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.65899e+09:1.69251e+09]
+Warning: empty y range [44:44], adjusting to [43.56:44.44]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.65899e+09:1.69251e+09]
+Warning: empty y range [44:44], adjusting to [43.56:44.44]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.65899e+09:1.69251e+09]
+Warning: empty y range [44:44], adjusting to [43.56:44.44]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.65899e+09:1.69251e+09]
+Warning: empty y range [44:44], adjusting to [43.56:44.44]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.65899e+09:1.69251e+09]
+Warning: empty y range [44:44], adjusting to [43.56:44.44]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.65899e+09:1.69251e+09]
+Warning: empty y range [44:44], adjusting to [43.56:44.44]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.65899e+09:1.69251e+09]
+Warning: empty y range [44:44], adjusting to [43.56:44.44]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.65899e+09:1.69251e+09]
+Warning: empty y range [44:44], adjusting to [43.56:44.44]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.65899e+09:1.69251e+09]
+Warning: empty y range [44:44], adjusting to [43.56:44.44]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.65899e+09:1.69251e+09]
+Warning: empty y range [44:44], adjusting to [43.56:44.44]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.65899e+09:1.69251e+09]
+Warning: empty y range [44:44], adjusting to [43.56:44.44]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.65899e+09:1.69251e+09]
+Warning: empty y range [44:44], adjusting to [43.56:44.44]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.65899e+09:1.69251e+09]
+Warning: empty y range [44:44], adjusting to [43.56:44.44]
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: warning: Skipping data file with no valid points
+
+plot "/var/www/basic-flask-app/moistureData.txt" using 1:2 with linespoints
+                                                                           ^
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: x range is invalid
+
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: warning: Skipping data file with no valid points
+
+plot "/var/www/basic-flask-app/moistureData.txt" using 1:2 with linespoints
+                                                                           ^
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: x range is invalid
+
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: warning: Skipping data file with no valid points
+
+plot "/var/www/basic-flask-app/moistureData.txt" using 1:2 with linespoints
+                                                                           ^
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: x range is invalid
+
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: warning: Skipping data file with no valid points
+
+plot "/var/www/basic-flask-app/moistureData.txt" using 1:2 with linespoints
+                                                                           ^
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: x range is invalid
+
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: warning: Skipping data file with no valid points
+
+plot "/var/www/basic-flask-app/moistureData.txt" using 1:2 with linespoints
+                                                                           ^
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: x range is invalid
+
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: warning: Skipping data file with no valid points
+
+plot "/var/www/basic-flask-app/moistureData.txt" using 1:2 with linespoints
+                                                                           ^
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: x range is invalid
+
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: warning: Skipping data file with no valid points
+
+plot "/var/www/basic-flask-app/moistureData.txt" using 1:2 with linespoints
+                                                                           ^
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: x range is invalid
+
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: warning: Skipping data file with no valid points
+
+plot "/var/www/basic-flask-app/moistureData.txt" using 1:2 with linespoints
+                                                                           ^
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: x range is invalid
+
+[Tue Feb 07 06:31:58.409336 2023] [wsgi:error] [pid 2056:tid 548316717440] [remote 192.168.1.222:65213] [2023-02-07 06:31:58,394] ERROR in app: Exception on / [GET]
+[Tue Feb 07 06:31:58.409550 2023] [wsgi:error] [pid 2056:tid 548316717440] [remote 192.168.1.222:65213] Traceback (most recent call last):
+[Tue Feb 07 06:31:58.409596 2023] [wsgi:error] [pid 2056:tid 548316717440] [remote 192.168.1.222:65213]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 2525, in wsgi_app
+[Tue Feb 07 06:31:58.409638 2023] [wsgi:error] [pid 2056:tid 548316717440] [remote 192.168.1.222:65213]     response = self.full_dispatch_request()
+[Tue Feb 07 06:31:58.409677 2023] [wsgi:error] [pid 2056:tid 548316717440] [remote 192.168.1.222:65213]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1822, in full_dispatch_request
+[Tue Feb 07 06:31:58.409717 2023] [wsgi:error] [pid 2056:tid 548316717440] [remote 192.168.1.222:65213]     rv = self.handle_user_exception(e)
+[Tue Feb 07 06:31:58.409754 2023] [wsgi:error] [pid 2056:tid 548316717440] [remote 192.168.1.222:65213]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1820, in full_dispatch_request
+[Tue Feb 07 06:31:58.409794 2023] [wsgi:error] [pid 2056:tid 548316717440] [remote 192.168.1.222:65213]     rv = self.dispatch_request()
+[Tue Feb 07 06:31:58.409831 2023] [wsgi:error] [pid 2056:tid 548316717440] [remote 192.168.1.222:65213]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1796, in dispatch_request
+[Tue Feb 07 06:31:58.410001 2023] [wsgi:error] [pid 2056:tid 548316717440] [remote 192.168.1.222:65213]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Tue Feb 07 06:31:58.410042 2023] [wsgi:error] [pid 2056:tid 548316717440] [remote 192.168.1.222:65213]   File "/var/www/basic-flask-app/app.py", line 32, in index
+[Tue Feb 07 06:31:58.410081 2023] [wsgi:error] [pid 2056:tid 548316717440] [remote 192.168.1.222:65213]     create_cursor = connection.cursor()
+[Tue Feb 07 06:31:58.410117 2023] [wsgi:error] [pid 2056:tid 548316717440] [remote 192.168.1.222:65213]   File "/usr/local/lib/python3.9/dist-packages/mysql/connector/connection.py", line 1406, in cursor
+[Tue Feb 07 06:31:58.410155 2023] [wsgi:error] [pid 2056:tid 548316717440] [remote 192.168.1.222:65213]     raise OperationalError("MySQL Connection not available")
+[Tue Feb 07 06:31:58.410192 2023] [wsgi:error] [pid 2056:tid 548316717440] [remote 192.168.1.222:65213] mysql.connector.errors.OperationalError: MySQL Connection not available
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: warning: Skipping data file with no valid points
+
+plot "/var/www/basic-flask-app/moistureData.txt" using 1:2 with linespoints
+                                                                           ^
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: x range is invalid
+
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: warning: Skipping data file with no valid points
+
+plot "/var/www/basic-flask-app/moistureData.txt" using 1:2 with linespoints
+                                                                           ^
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: x range is invalid
+
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: warning: Skipping data file with no valid points
+
+plot "/var/www/basic-flask-app/moistureData.txt" using 1:2 with linespoints
+                                                                           ^
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: x range is invalid
+
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: warning: Skipping data file with no valid points
+
+plot "/var/www/basic-flask-app/moistureData.txt" using 1:2 with linespoints
+                                                                           ^
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: x range is invalid
+
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: warning: Skipping data file with no valid points
+
+plot "/var/www/basic-flask-app/moistureData.txt" using 1:2 with linespoints
+                                                                           ^
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: x range is invalid
+
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: warning: Skipping data file with no valid points
+
+plot "/var/www/basic-flask-app/moistureData.txt" using 1:2 with linespoints
+                                                                           ^
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: x range is invalid
+
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [1:1], adjusting to [0.99:1.01]
+[Tue Feb 07 07:10:00.207730 2023] [wsgi:error] [pid 2972:tid 547707253120] [remote 192.168.1.222:65281] File does not exist
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: warning: Skipping data file with no valid points
+
+plot "/var/www/basic-flask-app/moistureData.txt" using 1:2 with linespoints
+                                                                           ^
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: x range is invalid
+
+[Tue Feb 07 07:10:24.607260 2023] [wsgi:error] [pid 2972:tid 547707253120] [remote 192.168.1.222:65282] File has been deleted
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [555:555], adjusting to [549.45:560.55]
+[Tue Feb 07 07:10:26.137894 2023] [wsgi:error] [pid 2972:tid 547673682304] [remote 192.168.1.222:65282] File has been deleted
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [555:555], adjusting to [549.45:560.55]
+[Tue Feb 07 07:10:45.363425 2023] [wsgi:error] [pid 2972:tid 547673682304] [remote 192.168.1.222:65283] File has been deleted
+[Tue Feb 07 07:10:52.066546 2023] [wsgi:error] [pid 2972:tid 547707253120] [remote 192.168.1.222:65284] File has been deleted
+[Tue Feb 07 07:11:05.966447 2023] [wsgi:error] [pid 2972:tid 547673682304] [remote 192.168.1.222:65285] File has been deleted
+[Tue Feb 07 07:11:38.214466 2023] [wsgi:error] [pid 2972:tid 547673682304] [remote 192.168.1.222:65286] File has been deleted
+[Tue Feb 07 07:11:48.359694 2023] [wsgi:error] [pid 2972:tid 547707253120] [remote 192.168.1.222:65287] File has been deleted
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: warning: Skipping data file with no valid points
+
+plot "/var/www/basic-flask-app/moistureData.txt" using 1:2 with linespoints
+                                                                           ^
+"/var/www/basic-flask-app/gnuMoisturePlotScript" line 8: x range is invalid
+
+[Tue Feb 07 07:15:03.418440 2023] [wsgi:error] [pid 3133:tid 547719516544] [remote 192.168.1.222:65291] File has been deleted
+[Tue Feb 07 07:15:09.438076 2023] [wsgi:error] [pid 3133:tid 547711123840] [remote 192.168.1.222:65292] File does not exist
+[Tue Feb 07 07:15:38.444936 2023] [wsgi:error] [pid 3133:tid 547719516544] [remote 192.168.1.222:65296] File does not exist
+[Tue Feb 07 07:16:08.865791 2023] [wsgi:error] [pid 3133:tid 547711123840] [remote 192.168.1.222:65297] File has been deleted
+[Tue Feb 07 07:18:43.816439 2023] [wsgi:error] [pid 3339:tid 547711705472] [remote 192.168.1.222:65310] File does not exist
+Warning: empty x range [1.67575e+09:1.67575e+09], adjusting to [1.659e+09:1.69251e+09]
+Warning: empty y range [555:555], adjusting to [549.45:560.55]
+[Tue Feb 07 07:19:12.869280 2023] [wsgi:error] [pid 3339:tid 547678134656] [remote 192.168.1.222:65312] File has been deleted
+Warning: empty x range [1.67578e+09:1.67578e+09], adjusting to [1.65902e+09:1.69254e+09]
+Warning: empty y range [10:10], adjusting to [9.9:10.1]
+[Tue Feb 07 15:18:11.890146 2023] [wsgi:error] [pid 4257:tid 548238025088] [remote 192.168.1.222:65517] [2023-02-07 15:18:11,814] ERROR in app: Exception on / [GET]
+[Tue Feb 07 15:18:11.890371 2023] [wsgi:error] [pid 4257:tid 548238025088] [remote 192.168.1.222:65517] Traceback (most recent call last):
+[Tue Feb 07 15:18:11.890415 2023] [wsgi:error] [pid 4257:tid 548238025088] [remote 192.168.1.222:65517]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 2525, in wsgi_app
+[Tue Feb 07 15:18:11.890458 2023] [wsgi:error] [pid 4257:tid 548238025088] [remote 192.168.1.222:65517]     response = self.full_dispatch_request()
+[Tue Feb 07 15:18:11.890505 2023] [wsgi:error] [pid 4257:tid 548238025088] [remote 192.168.1.222:65517]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1822, in full_dispatch_request
+[Tue Feb 07 15:18:11.890547 2023] [wsgi:error] [pid 4257:tid 548238025088] [remote 192.168.1.222:65517]     rv = self.handle_user_exception(e)
+[Tue Feb 07 15:18:11.890586 2023] [wsgi:error] [pid 4257:tid 548238025088] [remote 192.168.1.222:65517]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1820, in full_dispatch_request
+[Tue Feb 07 15:18:11.890625 2023] [wsgi:error] [pid 4257:tid 548238025088] [remote 192.168.1.222:65517]     rv = self.dispatch_request()
+[Tue Feb 07 15:18:11.890663 2023] [wsgi:error] [pid 4257:tid 548238025088] [remote 192.168.1.222:65517]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1796, in dispatch_request
+[Tue Feb 07 15:18:11.890761 2023] [wsgi:error] [pid 4257:tid 548238025088] [remote 192.168.1.222:65517]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Tue Feb 07 15:18:11.890801 2023] [wsgi:error] [pid 4257:tid 548238025088] [remote 192.168.1.222:65517]   File "/var/www/basic-flask-app/app.py", line 36, in index
+[Tue Feb 07 15:18:11.890839 2023] [wsgi:error] [pid 4257:tid 548238025088] [remote 192.168.1.222:65517]     create_cursor.execute(gardenDataInsert)
+[Tue Feb 07 15:18:11.890877 2023] [wsgi:error] [pid 4257:tid 548238025088] [remote 192.168.1.222:65517]   File "/usr/local/lib/python3.9/dist-packages/mysql/connector/cursor.py", line 617, in execute
+[Tue Feb 07 15:18:11.890915 2023] [wsgi:error] [pid 4257:tid 548238025088] [remote 192.168.1.222:65517]     self._handle_result(self._connection.cmd_query(stmt))
+[Tue Feb 07 15:18:11.890954 2023] [wsgi:error] [pid 4257:tid 548238025088] [remote 192.168.1.222:65517]   File "/usr/local/lib/python3.9/dist-packages/mysql/connector/connection.py", line 1046, in cmd_query
+[Tue Feb 07 15:18:11.890992 2023] [wsgi:error] [pid 4257:tid 548238025088] [remote 192.168.1.222:65517]     result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+[Tue Feb 07 15:18:11.891037 2023] [wsgi:error] [pid 4257:tid 548238025088] [remote 192.168.1.222:65517]   File "/usr/local/lib/python3.9/dist-packages/mysql/connector/connection.py", line 824, in _handle_result
+[Tue Feb 07 15:18:11.891077 2023] [wsgi:error] [pid 4257:tid 548238025088] [remote 192.168.1.222:65517]     raise get_exception(packet)
+[Tue Feb 07 15:18:11.891114 2023] [wsgi:error] [pid 4257:tid 548238025088] [remote 192.168.1.222:65517] mysql.connector.errors.DataError: 1406 (22001): Data too long for column 'moisture' at row 1
+Warning: empty x range [1.67581e+09:1.67581e+09], adjusting to [1.65905e+09:1.69257e+09]
+Warning: empty y range [555:555], adjusting to [549.45:560.55]
+[Wed Feb 08 00:38:29.107826 2023] [wsgi:error] [pid 5408:tid 548111176064] [remote 192.168.1.222:49409] mod_wsgi (pid=5408): Failed to exec Python script file '/var/www/basic-flask-app/app.wsgi'.
+[Wed Feb 08 00:38:29.108157 2023] [wsgi:error] [pid 5408:tid 548111176064] [remote 192.168.1.222:49409] mod_wsgi (pid=5408): Exception occurred processing WSGI script '/var/www/basic-flask-app/app.wsgi'.
+[Wed Feb 08 00:38:29.124443 2023] [wsgi:error] [pid 5408:tid 548111176064] [remote 192.168.1.222:49409] Traceback (most recent call last):
+[Wed Feb 08 00:38:29.124698 2023] [wsgi:error] [pid 5408:tid 548111176064] [remote 192.168.1.222:49409]   File "/var/www/basic-flask-app/app.wsgi", line 9, in <module>
+[Wed Feb 08 00:38:29.124752 2023] [wsgi:error] [pid 5408:tid 548111176064] [remote 192.168.1.222:49409]     from app import app as application
+[Wed Feb 08 00:38:29.124875 2023] [wsgi:error] [pid 5408:tid 548111176064] [remote 192.168.1.222:49409]   File "/var/www/basic-flask-app/app.py", line 111
+[Wed Feb 08 00:38:29.124992 2023] [wsgi:error] [pid 5408:tid 548111176064] [remote 192.168.1.222:49409]     return render_template('main.html', result=num1)
+[Wed Feb 08 00:38:29.125115 2023] [wsgi:error] [pid 5408:tid 548111176064] [remote 192.168.1.222:49409]     ^
+[Wed Feb 08 00:38:29.125217 2023] [wsgi:error] [pid 5408:tid 548111176064] [remote 192.168.1.222:49409] SyntaxError: invalid syntax
+[Wed Feb 08 00:39:35.760274 2023] [wsgi:error] [pid 5537:tid 548182077824] [remote 192.168.1.222:49410] [2023-02-08 00:39:35,757] ERROR in app: Exception on /generate [POST]
+[Wed Feb 08 00:39:35.760386 2023] [wsgi:error] [pid 5537:tid 548182077824] [remote 192.168.1.222:49410] Traceback (most recent call last):
+[Wed Feb 08 00:39:35.760401 2023] [wsgi:error] [pid 5537:tid 548182077824] [remote 192.168.1.222:49410]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 2525, in wsgi_app
+[Wed Feb 08 00:39:35.760415 2023] [wsgi:error] [pid 5537:tid 548182077824] [remote 192.168.1.222:49410]     response = self.full_dispatch_request()
+[Wed Feb 08 00:39:35.760455 2023] [wsgi:error] [pid 5537:tid 548182077824] [remote 192.168.1.222:49410]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1822, in full_dispatch_request
+[Wed Feb 08 00:39:35.760469 2023] [wsgi:error] [pid 5537:tid 548182077824] [remote 192.168.1.222:49410]     rv = self.handle_user_exception(e)
+[Wed Feb 08 00:39:35.760482 2023] [wsgi:error] [pid 5537:tid 548182077824] [remote 192.168.1.222:49410]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1820, in full_dispatch_request
+[Wed Feb 08 00:39:35.760495 2023] [wsgi:error] [pid 5537:tid 548182077824] [remote 192.168.1.222:49410]     rv = self.dispatch_request()
+[Wed Feb 08 00:39:35.760508 2023] [wsgi:error] [pid 5537:tid 548182077824] [remote 192.168.1.222:49410]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1796, in dispatch_request
+[Wed Feb 08 00:39:35.760521 2023] [wsgi:error] [pid 5537:tid 548182077824] [remote 192.168.1.222:49410]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Wed Feb 08 00:39:35.760534 2023] [wsgi:error] [pid 5537:tid 548182077824] [remote 192.168.1.222:49410]   File "/var/www/basic-flask-app/app.py", line 109, in generateDate
+[Wed Feb 08 00:39:35.760548 2023] [wsgi:error] [pid 5537:tid 548182077824] [remote 192.168.1.222:49410]     os.system("gnuplot -p -e \\"set terminal png size 1500,1500; set output \\'/var/www/basic-flask-app/static/{num1}.png\\'; load \\'/var/www/basic-flask-app/gnuMoisturePlotScript\\'\\"".format(num1))
+[Wed Feb 08 00:39:35.760561 2023] [wsgi:error] [pid 5537:tid 548182077824] [remote 192.168.1.222:49410] KeyError: 'num1'
+[Wed Feb 08 00:51:00.837410 2023] [wsgi:error] [pid 6008:tid 548479803776] [remote 192.168.1.222:49425] mod_wsgi (pid=6008): Failed to exec Python script file '/var/www/basic-flask-app/app.wsgi'.
+[Wed Feb 08 00:51:00.837733 2023] [wsgi:error] [pid 6008:tid 548479803776] [remote 192.168.1.222:49425] mod_wsgi (pid=6008): Exception occurred processing WSGI script '/var/www/basic-flask-app/app.wsgi'.
+[Wed Feb 08 00:51:00.853495 2023] [wsgi:error] [pid 6008:tid 548479803776] [remote 192.168.1.222:49425] Traceback (most recent call last):
+[Wed Feb 08 00:51:00.853748 2023] [wsgi:error] [pid 6008:tid 548479803776] [remote 192.168.1.222:49425]   File "/var/www/basic-flask-app/app.wsgi", line 9, in <module>
+[Wed Feb 08 00:51:00.853802 2023] [wsgi:error] [pid 6008:tid 548479803776] [remote 192.168.1.222:49425]     from app import app as application
+[Wed Feb 08 00:51:00.854017 2023] [wsgi:error] [pid 6008:tid 548479803776] [remote 192.168.1.222:49425]   File "/var/www/basic-flask-app/app.py", line 57
+[Wed Feb 08 00:51:00.854146 2023] [wsgi:error] [pid 6008:tid 548479803776] [remote 192.168.1.222:49425]     os.remove(file) for file in os.listdir('/var/www/basic-flask-app/static') if file.endswith('.png')
+[Wed Feb 08 00:51:00.854293 2023] [wsgi:error] [pid 6008:tid 548479803776] [remote 192.168.1.222:49425]                     ^
+[Wed Feb 08 00:51:00.854396 2023] [wsgi:error] [pid 6008:tid 548479803776] [remote 192.168.1.222:49425] SyntaxError: invalid syntax
+[Wed Feb 08 00:54:49.067104 2023] [wsgi:error] [pid 6138:tid 548172632448] [remote 192.168.1.222:49427] [2023-02-08 00:54:49,060] ERROR in app: Exception on /generate [POST]
+[Wed Feb 08 00:54:49.067335 2023] [wsgi:error] [pid 6138:tid 548172632448] [remote 192.168.1.222:49427] Traceback (most recent call last):
+[Wed Feb 08 00:54:49.067386 2023] [wsgi:error] [pid 6138:tid 548172632448] [remote 192.168.1.222:49427]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 2525, in wsgi_app
+[Wed Feb 08 00:54:49.067428 2023] [wsgi:error] [pid 6138:tid 548172632448] [remote 192.168.1.222:49427]     response = self.full_dispatch_request()
+[Wed Feb 08 00:54:49.067474 2023] [wsgi:error] [pid 6138:tid 548172632448] [remote 192.168.1.222:49427]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1822, in full_dispatch_request
+[Wed Feb 08 00:54:49.067572 2023] [wsgi:error] [pid 6138:tid 548172632448] [remote 192.168.1.222:49427]     rv = self.handle_user_exception(e)
+[Wed Feb 08 00:54:49.067611 2023] [wsgi:error] [pid 6138:tid 548172632448] [remote 192.168.1.222:49427]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1820, in full_dispatch_request
+[Wed Feb 08 00:54:49.067650 2023] [wsgi:error] [pid 6138:tid 548172632448] [remote 192.168.1.222:49427]     rv = self.dispatch_request()
+[Wed Feb 08 00:54:49.067686 2023] [wsgi:error] [pid 6138:tid 548172632448] [remote 192.168.1.222:49427]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1796, in dispatch_request
+[Wed Feb 08 00:54:49.067752 2023] [wsgi:error] [pid 6138:tid 548172632448] [remote 192.168.1.222:49427]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Wed Feb 08 00:54:49.067790 2023] [wsgi:error] [pid 6138:tid 548172632448] [remote 192.168.1.222:49427]   File "/var/www/basic-flask-app/app.py", line 59, in generateDate
+[Wed Feb 08 00:54:49.067827 2023] [wsgi:error] [pid 6138:tid 548172632448] [remote 192.168.1.222:49427]     os.remove(file)
+[Wed Feb 08 00:54:49.067863 2023] [wsgi:error] [pid 6138:tid 548172632448] [remote 192.168.1.222:49427] FileNotFoundError: [Errno 2] No such file or directory: '32310.png'
+[Wed Feb 08 01:01:09.269147 2023] [wsgi:error] [pid 6590:tid 548049932672] [remote 192.168.1.222:49433] [2023-02-08 01:01:09,266] ERROR in app: Exception on /generate [POST]
+[Wed Feb 08 01:01:09.269261 2023] [wsgi:error] [pid 6590:tid 548049932672] [remote 192.168.1.222:49433] Traceback (most recent call last):
+[Wed Feb 08 01:01:09.269278 2023] [wsgi:error] [pid 6590:tid 548049932672] [remote 192.168.1.222:49433]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 2525, in wsgi_app
+[Wed Feb 08 01:01:09.269292 2023] [wsgi:error] [pid 6590:tid 548049932672] [remote 192.168.1.222:49433]     response = self.full_dispatch_request()
+[Wed Feb 08 01:01:09.269308 2023] [wsgi:error] [pid 6590:tid 548049932672] [remote 192.168.1.222:49433]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1822, in full_dispatch_request
+[Wed Feb 08 01:01:09.269322 2023] [wsgi:error] [pid 6590:tid 548049932672] [remote 192.168.1.222:49433]     rv = self.handle_user_exception(e)
+[Wed Feb 08 01:01:09.269334 2023] [wsgi:error] [pid 6590:tid 548049932672] [remote 192.168.1.222:49433]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1820, in full_dispatch_request
+[Wed Feb 08 01:01:09.269348 2023] [wsgi:error] [pid 6590:tid 548049932672] [remote 192.168.1.222:49433]     rv = self.dispatch_request()
+[Wed Feb 08 01:01:09.269360 2023] [wsgi:error] [pid 6590:tid 548049932672] [remote 192.168.1.222:49433]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1796, in dispatch_request
+[Wed Feb 08 01:01:09.269374 2023] [wsgi:error] [pid 6590:tid 548049932672] [remote 192.168.1.222:49433]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Wed Feb 08 01:01:09.269387 2023] [wsgi:error] [pid 6590:tid 548049932672] [remote 192.168.1.222:49433]   File "/var/www/basic-flask-app/app.py", line 91, in generateDate
+[Wed Feb 08 01:01:09.269399 2023] [wsgi:error] [pid 6590:tid 548049932672] [remote 192.168.1.222:49433]     num1 = num1 + ".png"
+[Wed Feb 08 01:01:09.269412 2023] [wsgi:error] [pid 6590:tid 548049932672] [remote 192.168.1.222:49433] TypeError: unsupported operand type(s) for +: 'int' and 'str'
+[Wed Feb 08 01:04:49.348430 2023] [wsgi:error] [pid 6824:tid 548137468288] [remote 192.168.1.222:49449] mod_wsgi (pid=6824): Failed to exec Python script file '/var/www/basic-flask-app/app.wsgi'.
+[Wed Feb 08 01:04:49.348632 2023] [wsgi:error] [pid 6824:tid 548137468288] [remote 192.168.1.222:49449] mod_wsgi (pid=6824): Exception occurred processing WSGI script '/var/www/basic-flask-app/app.wsgi'.
+[Wed Feb 08 01:04:49.354897 2023] [wsgi:error] [pid 6824:tid 548137468288] [remote 192.168.1.222:49449] Traceback (most recent call last):
+[Wed Feb 08 01:04:49.355015 2023] [wsgi:error] [pid 6824:tid 548137468288] [remote 192.168.1.222:49449]   File "/var/www/basic-flask-app/app.wsgi", line 9, in <module>
+[Wed Feb 08 01:04:49.355034 2023] [wsgi:error] [pid 6824:tid 548137468288] [remote 192.168.1.222:49449]     from app import app as application
+[Wed Feb 08 01:04:49.355077 2023] [wsgi:error] [pid 6824:tid 548137468288] [remote 192.168.1.222:49449]   File "/var/www/basic-flask-app/app.py", line 91
+[Wed Feb 08 01:04:49.355117 2023] [wsgi:error] [pid 6824:tid 548137468288] [remote 192.168.1.222:49449]     num1 = "./static/"str(num1) + ".png"
+[Wed Feb 08 01:04:49.355169 2023] [wsgi:error] [pid 6824:tid 548137468288] [remote 192.168.1.222:49449]                       ^
+[Wed Feb 08 01:04:49.355203 2023] [wsgi:error] [pid 6824:tid 548137468288] [remote 192.168.1.222:49449] SyntaxError: invalid syntax
+
+set terminal png size 1500,1500; set output '/var/www/basic-flask-app/static/./static/2734142.png.png'; load '/var/www/basic-flask-app/gnuMoisturePlotScript'
+                                                                                                      ^
+line 0: cannot open file; output not changed
+system error: No such file or directory
+
+
+set terminal png size 1500,1500; set output '/var/www/basic-flask-app/static/./static/4665794.png.png'; load '/var/www/basic-flask-app/gnuMoisturePlotScript'
+                                                                                                      ^
+line 0: cannot open file; output not changed
+system error: No such file or directory
+
+
+set terminal png size 1500,1500; set output '/var/www/basic-flask-app/static/./static/2925581.png.png'; load '/var/www/basic-flask-app/gnuMoisturePlotScript'
+                                                                                                      ^
+line 0: cannot open file; output not changed
+system error: No such file or directory
+
+
+set terminal png size 1500,1500; set output '/var/www/basic-flask-app/static//static/4365597.png.png'; load '/var/www/basic-flask-app/gnuMoisturePlotScript'
+                                                                                                     ^
+line 0: cannot open file; output not changed
+system error: No such file or directory
+
+
+set terminal png size 1500,1500; set output '/var/www/basic-flask-app/static//static/1432717.png.png'; load '/var/www/basic-flask-app/gnuMoisturePlotScript'
+                                                                                                     ^
+line 0: cannot open file; output not changed
+system error: No such file or directory
+
+
+set terminal png size 1500,1500; set output '/var/www/basic-flask-app/static//static/4725341.png.png'; load '/var/www/basic-flask-app/gnuMoisturePlotScript'
+                                                                                                     ^
+line 0: cannot open file; output not changed
+system error: No such file or directory
+
+
+set terminal png size 1500,1500; set output '/var/www/basic-flask-app/static//static/3704099.png.png'; load '/var/www/basic-flask-app/gnuMoisturePlotScript'
+                                                                                                     ^
+line 0: cannot open file; output not changed
+system error: No such file or directory
+
+
+set terminal png size 1500,1500; set output '/var/www/basic-flask-app/static//static/4150239.png.png'; load '/var/www/basic-flask-app/gnuMoisturePlotScript'
+                                                                                                     ^
+line 0: cannot open file; output not changed
+system error: No such file or directory
+
+
+set terminal png size 1500,1500; set output '/var/www/basic-flask-app/static//static/610757.png.png'; load '/var/www/basic-flask-app/gnuMoisturePlotScript'
+                                                                                                    ^
+line 0: cannot open file; output not changed
+system error: No such file or directory
+
+
+set terminal png size 1500,1500; set output '/var/www/basic-flask-app/static//static/2873996.png.png'; load '/var/www/basic-flask-app/gnuMoisturePlotScript'
+                                                                                                     ^
+line 0: cannot open file; output not changed
+system error: No such file or directory
+
+
+set terminal png size 1500,1500; set output '/var/www/basic-flask-app/static//static/1677095.png.png'; load '/var/www/basic-flask-app/gnuMoisturePlotScript'
+                                                                                                     ^
+line 0: cannot open file; output not changed
+system error: No such file or directory
+
+
+set terminal png size 1500,1500; set output '/var/www/basic-flask-app/static//static/31218.png.png'; load '/var/www/basic-flask-app/gnuMoisturePlotScript'
+                                                                                                   ^
+line 0: cannot open file; output not changed
+system error: No such file or directory
+
+
+set terminal png size 1500,1500; set output '/var/www/basic-flask-app/static//static/1748600.png.png'; load '/var/www/basic-flask-app/gnuMoisturePlotScript'
+                                                                                                     ^
+line 0: cannot open file; output not changed
+system error: No such file or directory
+
+
+set terminal png size 1500,1500; set output '/var/www/basic-flask-app/static//static/1135723.png.png'; load '/var/www/basic-flask-app/gnuMoisturePlotScript'
+                                                                                                     ^
+line 0: cannot open file; output not changed
+system error: No such file or directory
+
+
+set terminal png size 1500,1500; set output '/var/www/basic-flask-app/static//static/521326.png.png'; load '/var/www/basic-flask-app/gnuMoisturePlotScript'
+                                                                                                    ^
+line 0: cannot open file; output not changed
+system error: No such file or directory
+
+
+set terminal png size 1500,1500; set output '/var/www/basic-flask-app/static//static/3091008.png.png'; load '/var/www/basic-flask-app/gnuMoisturePlotScript'
+                                                                                                     ^
+line 0: cannot open file; output not changed
+system error: No such file or directory
+
+
+set terminal png size 1500,1500; set output '/var/www/basic-flask-app/static//static/1389339.png.png'; load '/var/www/basic-flask-app/gnuMoisturePlotScript'
+                                                                                                     ^
+line 0: cannot open file; output not changed
+system error: No such file or directory
+
+
+set terminal png size 1500,1500; set output '/var/www/basic-flask-app/static//static/3579256.png.png'; load '/var/www/basic-flask-app/gnuMoisturePlotScript'
+                                                                                                     ^
+line 0: cannot open file; output not changed
+system error: No such file or directory
+
+
+set terminal png size 1500,1500; set output '/var/www/basic-flask-app/static//static/473946.png.png'; load '/var/www/basic-flask-app/gnuMoisturePlotScript'
+                                                                                                    ^
+line 0: cannot open file; output not changed
+system error: No such file or directory
+
+Warning: empty x range [1.67583e+09:1.67583e+09], adjusting to [1.65908e+09:1.69259e+09]
+Warning: empty y range [17:17], adjusting to [16.83:17.17]

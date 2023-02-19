@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="stylesheet" href="../static/styles.css" />
+		<title>home</title>
+	</head>
+<body id="bodyIndex">
+	<div class="loginBox">
+		<div class="loginBoxInside">
+			
+			<div class="loginForm">
+				<form action="/form" method="post">
+					<label for="userName">Username</label><br>
+					<input type="text" id="userName" name="user-name" size="20"><br><br>
+					<label for="password">Password</label><br>
+					<input type="text" id="password" name="Password"><br><br>
+					<input type="submit" value="login">
+				</form>
+				<p>{{ result }}</p>
+
+			</div>
+			
+			<!--
+				<h1 id="h1Login">HI</h1>
+				<p>test</p>
+			-->
+	
+		</div>
+	</div>
+	
+</body>
+</html>

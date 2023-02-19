@@ -1,0 +1,8 @@
+set title "Soil Moisture"
+set datafile separator ","
+set xdata time
+set timefmt "%Y-%m-%d---%H:%M:%S"
+set format x "%d-%m %H:%M"
+set xlabel "time"
+set ylabel "moisture level"
+plot "/var/www/basic-flask-app/moistureData.txt" using 1:2 with linespoints
