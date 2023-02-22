@@ -24,7 +24,7 @@ def databaseConnect():
     connection = mysql.connector.connect(host="localhost",
                                             port=3306, 
                                             user="root", 
-                                            password="BenTally95")
+                                            password="randomPassword")
     return connection
 
 #--------------------------------------------------------------------------------------------------------------------------
