@@ -17,6 +17,17 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
 #---------------------------------------------------------------------------------------------------------------------------
 
+#function to connect to the database and returning the connnection
+def databaseConnect():
+    
+    #GLOBAL sql connection to the local hosted daatabase on my raspPI and associated login information
+    connection = mysql.connector.connect(host="localhost",
+                                            port=3306, 
+                                            user="root", 
+                                            password="BenTally95")
+    return connection
+
+#--------------------------------------------------------------------------------------------------------------------------
 
 #processing for the landing page
 @app.route('/')
@@ -25,12 +36,8 @@ def index():
     #check to see if data package exists in GET REQUEST - if it does will push incoming garden data into database
     if request.args.get("name") != None:
         
-        #GLOBAL sql connection to the local hosted daatabase on my raspPI and associated login information
-        connection= mysql.connector.connect(host="localhost",
-                                            port=3306, 
-                                            user="root", 
-                                            password="BenTally95")
-
+        #calling custom database function
+        connection = databaseConnect()
         
         gardenDataInsert = "INSERT INTO garden.soilMoisture (dateTime, moisture) VALUES (NOW(),\"{}\")".format(request.args.get("name"))
         create_cursor = connection.cursor()
@@ -59,11 +66,8 @@ def generateDate():
                 stringgg = "/var/www/basic-flask-app/static/{}".format(file)
                 os.remove(stringgg) 
 
-        #GLOBAL sql connection to the local hosted daatabase on my raspPI and associated login information
-        connection= mysql.connector.connect(host="localhost",
-                                            port=3306, 
-                                            user="root", 
-                                            password="BenTally95")
+        #GLOBAL sql connection to the local hosted daatabase on my raspPI and associated login information using custom function
+        connection = databaseConnect()
 
         #pull soilmoisture data from the database
         gardenDataInsert = "select * from  garden.soilMoisture"
@@ -133,11 +137,9 @@ def form():
         return render_template('index.html', result = "Make sure you fill out both Username and Password boxes please :)")
 
     else:
-        #GLOBAL sql connection to the local hosted daatabase on my raspPI and associated login information
-        connection= mysql.connector.connect(host="localhost",
-                                            port=3306, 
-                                            user="root", 
-                                            password="BenTally95")
+        #GLOBAL sql connection to the local hosted daatabase on my raspPI and associated login information using custom function
+        connection = databaseConnect()
+
         #pulls data from the garden databse login table checking to see if the username exists in it
         loginSearch ="SELECT * from garden.login where username=\"{}\"".format(request.form['user-name'])
         create_cursor = connection.cursor()

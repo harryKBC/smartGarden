@@ -452,3 +452,39 @@ system error: No such file or directory
 
 Warning: empty x range [1.67583e+09:1.67583e+09], adjusting to [1.65908e+09:1.69259e+09]
 Warning: empty y range [17:17], adjusting to [16.83:17.17]
+[Wed Feb 22 06:56:12.752691 2023] [wsgi:error] [pid 7818:tid 547895517568] [remote 192.168.1.222:56784] mod_wsgi (pid=7818): Failed to exec Python script file '/var/www/basic-flask-app/app.wsgi'.
+[Wed Feb 22 06:56:12.753149 2023] [wsgi:error] [pid 7818:tid 547895517568] [remote 192.168.1.222:56784] mod_wsgi (pid=7818): Exception occurred processing WSGI script '/var/www/basic-flask-app/app.wsgi'.
+[Wed Feb 22 06:56:12.769341 2023] [wsgi:error] [pid 7818:tid 547895517568] [remote 192.168.1.222:56784] Traceback (most recent call last):
+[Wed Feb 22 06:56:12.769589 2023] [wsgi:error] [pid 7818:tid 547895517568] [remote 192.168.1.222:56784]   File "/var/www/basic-flask-app/app.wsgi", line 9, in <module>
+[Wed Feb 22 06:56:12.769641 2023] [wsgi:error] [pid 7818:tid 547895517568] [remote 192.168.1.222:56784]     from app import app as application
+[Wed Feb 22 06:56:12.769763 2023] [wsgi:error] [pid 7818:tid 547895517568] [remote 192.168.1.222:56784]   File "/var/www/basic-flask-app/app.py", line 141
+[Wed Feb 22 06:56:12.769878 2023] [wsgi:error] [pid 7818:tid 547895517568] [remote 192.168.1.222:56784]     connection= = databaseConnect()
+[Wed Feb 22 06:56:12.770019 2023] [wsgi:error] [pid 7818:tid 547895517568] [remote 192.168.1.222:56784]                 ^
+[Wed Feb 22 06:56:12.770120 2023] [wsgi:error] [pid 7818:tid 547895517568] [remote 192.168.1.222:56784] SyntaxError: invalid syntax
+[Wed Feb 22 06:56:12.846941 2023] [wsgi:error] [pid 7818:tid 547861946752] [remote 192.168.1.222:56785] mod_wsgi (pid=7818): Failed to exec Python script file '/var/www/basic-flask-app/app.wsgi'.
+[Wed Feb 22 06:56:12.847087 2023] [wsgi:error] [pid 7818:tid 547861946752] [remote 192.168.1.222:56785] mod_wsgi (pid=7818): Exception occurred processing WSGI script '/var/www/basic-flask-app/app.wsgi'.
+[Wed Feb 22 06:56:12.847314 2023] [wsgi:error] [pid 7818:tid 547861946752] [remote 192.168.1.222:56785] Traceback (most recent call last):
+[Wed Feb 22 06:56:12.847391 2023] [wsgi:error] [pid 7818:tid 547861946752] [remote 192.168.1.222:56785]   File "/var/www/basic-flask-app/app.wsgi", line 9, in <module>
+[Wed Feb 22 06:56:12.847409 2023] [wsgi:error] [pid 7818:tid 547861946752] [remote 192.168.1.222:56785]     from app import app as application
+[Wed Feb 22 06:56:12.847455 2023] [wsgi:error] [pid 7818:tid 547861946752] [remote 192.168.1.222:56785]   File "/var/www/basic-flask-app/app.py", line 141
+[Wed Feb 22 06:56:12.847494 2023] [wsgi:error] [pid 7818:tid 547861946752] [remote 192.168.1.222:56785]     connection= = databaseConnect()
+[Wed Feb 22 06:56:12.847549 2023] [wsgi:error] [pid 7818:tid 547861946752] [remote 192.168.1.222:56785]                 ^
+[Wed Feb 22 06:56:12.847583 2023] [wsgi:error] [pid 7818:tid 547861946752] [remote 192.168.1.222:56785] SyntaxError: invalid syntax
+[Wed Feb 22 06:56:18.267087 2023] [wsgi:error] [pid 7818:tid 547895517568] [remote 192.168.1.222:56807] mod_wsgi (pid=7818): Failed to exec Python script file '/var/www/basic-flask-app/app.wsgi'.
+[Wed Feb 22 06:56:18.267383 2023] [wsgi:error] [pid 7818:tid 547895517568] [remote 192.168.1.222:56807] mod_wsgi (pid=7818): Exception occurred processing WSGI script '/var/www/basic-flask-app/app.wsgi'.
+[Wed Feb 22 06:56:18.269259 2023] [wsgi:error] [pid 7818:tid 547895517568] [remote 192.168.1.222:56807] Traceback (most recent call last):
+[Wed Feb 22 06:56:18.269457 2023] [wsgi:error] [pid 7818:tid 547895517568] [remote 192.168.1.222:56807]   File "/var/www/basic-flask-app/app.wsgi", line 9, in <module>
+[Wed Feb 22 06:56:18.269509 2023] [wsgi:error] [pid 7818:tid 547895517568] [remote 192.168.1.222:56807]     from app import app as application
+[Wed Feb 22 06:56:18.269632 2023] [wsgi:error] [pid 7818:tid 547895517568] [remote 192.168.1.222:56807]   File "/var/www/basic-flask-app/app.py", line 141
+[Wed Feb 22 06:56:18.269747 2023] [wsgi:error] [pid 7818:tid 547895517568] [remote 192.168.1.222:56807]     connection= = databaseConnect()
+[Wed Feb 22 06:56:18.269901 2023] [wsgi:error] [pid 7818:tid 547895517568] [remote 192.168.1.222:56807]                 ^
+[Wed Feb 22 06:56:18.270004 2023] [wsgi:error] [pid 7818:tid 547895517568] [remote 192.168.1.222:56807] SyntaxError: invalid syntax
+[Wed Feb 22 06:56:18.351500 2023] [wsgi:error] [pid 7818:tid 547861946752] [remote 192.168.1.222:56808] mod_wsgi (pid=7818): Failed to exec Python script file '/var/www/basic-flask-app/app.wsgi'.
+[Wed Feb 22 06:56:18.351759 2023] [wsgi:error] [pid 7818:tid 547861946752] [remote 192.168.1.222:56808] mod_wsgi (pid=7818): Exception occurred processing WSGI script '/var/www/basic-flask-app/app.wsgi'.
+[Wed Feb 22 06:56:18.352134 2023] [wsgi:error] [pid 7818:tid 547861946752] [remote 192.168.1.222:56808] Traceback (most recent call last):
+[Wed Feb 22 06:56:18.352267 2023] [wsgi:error] [pid 7818:tid 547861946752] [remote 192.168.1.222:56808]   File "/var/www/basic-flask-app/app.wsgi", line 9, in <module>
+[Wed Feb 22 06:56:18.352305 2023] [wsgi:error] [pid 7818:tid 547861946752] [remote 192.168.1.222:56808]     from app import app as application
+[Wed Feb 22 06:56:18.352400 2023] [wsgi:error] [pid 7818:tid 547861946752] [remote 192.168.1.222:56808]   File "/var/www/basic-flask-app/app.py", line 141
+[Wed Feb 22 06:56:18.352486 2023] [wsgi:error] [pid 7818:tid 547861946752] [remote 192.168.1.222:56808]     connection= = databaseConnect()
+[Wed Feb 22 06:56:18.352600 2023] [wsgi:error] [pid 7818:tid 547861946752] [remote 192.168.1.222:56808]                 ^
+[Wed Feb 22 06:56:18.352677 2023] [wsgi:error] [pid 7818:tid 547861946752] [remote 192.168.1.222:56808] SyntaxError: invalid syntax
