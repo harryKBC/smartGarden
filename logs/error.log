@@ -488,3 +488,67 @@ Warning: empty y range [17:17], adjusting to [16.83:17.17]
 [Wed Feb 22 06:56:18.352486 2023] [wsgi:error] [pid 7818:tid 547861946752] [remote 192.168.1.222:56808]     connection= = databaseConnect()
 [Wed Feb 22 06:56:18.352600 2023] [wsgi:error] [pid 7818:tid 547861946752] [remote 192.168.1.222:56808]                 ^
 [Wed Feb 22 06:56:18.352677 2023] [wsgi:error] [pid 7818:tid 547861946752] [remote 192.168.1.222:56808] SyntaxError: invalid syntax
+[Mon Feb 27 01:14:25.516805 2023] [wsgi:error] [pid 15163:tid 548197028224] [remote 192.168.1.222:51518] [2023-02-27 01:14:25,510] ERROR in app: Exception on /generate [POST]
+[Mon Feb 27 01:14:25.516917 2023] [wsgi:error] [pid 15163:tid 548197028224] [remote 192.168.1.222:51518] Traceback (most recent call last):
+[Mon Feb 27 01:14:25.516932 2023] [wsgi:error] [pid 15163:tid 548197028224] [remote 192.168.1.222:51518]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 2525, in wsgi_app
+[Mon Feb 27 01:14:25.516946 2023] [wsgi:error] [pid 15163:tid 548197028224] [remote 192.168.1.222:51518]     response = self.full_dispatch_request()
+[Mon Feb 27 01:14:25.516961 2023] [wsgi:error] [pid 15163:tid 548197028224] [remote 192.168.1.222:51518]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1822, in full_dispatch_request
+[Mon Feb 27 01:14:25.516975 2023] [wsgi:error] [pid 15163:tid 548197028224] [remote 192.168.1.222:51518]     rv = self.handle_user_exception(e)
+[Mon Feb 27 01:14:25.516988 2023] [wsgi:error] [pid 15163:tid 548197028224] [remote 192.168.1.222:51518]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1820, in full_dispatch_request
+[Mon Feb 27 01:14:25.517001 2023] [wsgi:error] [pid 15163:tid 548197028224] [remote 192.168.1.222:51518]     rv = self.dispatch_request()
+[Mon Feb 27 01:14:25.517013 2023] [wsgi:error] [pid 15163:tid 548197028224] [remote 192.168.1.222:51518]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1796, in dispatch_request
+[Mon Feb 27 01:14:25.517026 2023] [wsgi:error] [pid 15163:tid 548197028224] [remote 192.168.1.222:51518]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Mon Feb 27 01:14:25.517039 2023] [wsgi:error] [pid 15163:tid 548197028224] [remote 192.168.1.222:51518]   File "/var/www/basic-flask-app/app.py", line 137, in generateDate
+[Mon Feb 27 01:14:25.517052 2023] [wsgi:error] [pid 15163:tid 548197028224] [remote 192.168.1.222:51518]     num1 = pullGraph("select * from  garden.soilMoisture")
+[Mon Feb 27 01:14:25.517064 2023] [wsgi:error] [pid 15163:tid 548197028224] [remote 192.168.1.222:51518]   File "/var/www/basic-flask-app/app.py", line 25, in pullGraph
+[Mon Feb 27 01:14:25.517076 2023] [wsgi:error] [pid 15163:tid 548197028224] [remote 192.168.1.222:51518]     create_cursor = connection.cursor()
+[Mon Feb 27 01:14:25.517089 2023] [wsgi:error] [pid 15163:tid 548197028224] [remote 192.168.1.222:51518] NameError: name 'connection' is not defined
+[Mon Feb 27 01:19:53.381725 2023] [wsgi:error] [pid 15430:tid 548202602880] [remote 192.168.1.222:51546] [2023-02-27 01:19:53,379] ERROR in app: Exception on /generate [POST]
+[Mon Feb 27 01:19:53.381867 2023] [wsgi:error] [pid 15430:tid 548202602880] [remote 192.168.1.222:51546] Traceback (most recent call last):
+[Mon Feb 27 01:19:53.381883 2023] [wsgi:error] [pid 15430:tid 548202602880] [remote 192.168.1.222:51546]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 2525, in wsgi_app
+[Mon Feb 27 01:19:53.381897 2023] [wsgi:error] [pid 15430:tid 548202602880] [remote 192.168.1.222:51546]     response = self.full_dispatch_request()
+[Mon Feb 27 01:19:53.381914 2023] [wsgi:error] [pid 15430:tid 548202602880] [remote 192.168.1.222:51546]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1822, in full_dispatch_request
+[Mon Feb 27 01:19:53.381928 2023] [wsgi:error] [pid 15430:tid 548202602880] [remote 192.168.1.222:51546]     rv = self.handle_user_exception(e)
+[Mon Feb 27 01:19:53.381941 2023] [wsgi:error] [pid 15430:tid 548202602880] [remote 192.168.1.222:51546]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1820, in full_dispatch_request
+[Mon Feb 27 01:19:53.381954 2023] [wsgi:error] [pid 15430:tid 548202602880] [remote 192.168.1.222:51546]     rv = self.dispatch_request()
+[Mon Feb 27 01:19:53.381967 2023] [wsgi:error] [pid 15430:tid 548202602880] [remote 192.168.1.222:51546]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1796, in dispatch_request
+[Mon Feb 27 01:19:53.381981 2023] [wsgi:error] [pid 15430:tid 548202602880] [remote 192.168.1.222:51546]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Mon Feb 27 01:19:53.381994 2023] [wsgi:error] [pid 15430:tid 548202602880] [remote 192.168.1.222:51546]   File "/var/www/basic-flask-app/app.py", line 138, in generateDate
+[Mon Feb 27 01:19:53.382007 2023] [wsgi:error] [pid 15430:tid 548202602880] [remote 192.168.1.222:51546]     num1 = pullGraph("select * from  garden.soilMoisture",connection)
+[Mon Feb 27 01:19:53.382020 2023] [wsgi:error] [pid 15430:tid 548202602880] [remote 192.168.1.222:51546]   File "/var/www/basic-flask-app/app.py", line 72, in pullGraph
+[Mon Feb 27 01:19:53.382033 2023] [wsgi:error] [pid 15430:tid 548202602880] [remote 192.168.1.222:51546]     return none
+[Mon Feb 27 01:19:53.382046 2023] [wsgi:error] [pid 15430:tid 548202602880] [remote 192.168.1.222:51546] NameError: name 'none' is not defined
+[Mon Feb 27 01:35:29.679997 2023] [wsgi:error] [pid 15976:tid 547920699776] [remote 192.168.1.222:51560] [2023-02-27 01:35:29,665] ERROR in app: Exception on /generateDate [POST]
+[Mon Feb 27 01:35:29.680215 2023] [wsgi:error] [pid 15976:tid 547920699776] [remote 192.168.1.222:51560] Traceback (most recent call last):
+[Mon Feb 27 01:35:29.680261 2023] [wsgi:error] [pid 15976:tid 547920699776] [remote 192.168.1.222:51560]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 2525, in wsgi_app
+[Mon Feb 27 01:35:29.680304 2023] [wsgi:error] [pid 15976:tid 547920699776] [remote 192.168.1.222:51560]     response = self.full_dispatch_request()
+[Mon Feb 27 01:35:29.680415 2023] [wsgi:error] [pid 15976:tid 547920699776] [remote 192.168.1.222:51560]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1822, in full_dispatch_request
+[Mon Feb 27 01:35:29.680458 2023] [wsgi:error] [pid 15976:tid 547920699776] [remote 192.168.1.222:51560]     rv = self.handle_user_exception(e)
+[Mon Feb 27 01:35:29.680497 2023] [wsgi:error] [pid 15976:tid 547920699776] [remote 192.168.1.222:51560]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1820, in full_dispatch_request
+[Mon Feb 27 01:35:29.680538 2023] [wsgi:error] [pid 15976:tid 547920699776] [remote 192.168.1.222:51560]     rv = self.dispatch_request()
+[Mon Feb 27 01:35:29.680640 2023] [wsgi:error] [pid 15976:tid 547920699776] [remote 192.168.1.222:51560]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1796, in dispatch_request
+[Mon Feb 27 01:35:29.680683 2023] [wsgi:error] [pid 15976:tid 547920699776] [remote 192.168.1.222:51560]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Mon Feb 27 01:35:29.680722 2023] [wsgi:error] [pid 15976:tid 547920699776] [remote 192.168.1.222:51560]   File "/var/www/basic-flask-app/app.py", line 163, in generateDateData
+[Mon Feb 27 01:35:29.680761 2023] [wsgi:error] [pid 15976:tid 547920699776] [remote 192.168.1.222:51560]     num1 = pullGraph("select * from garden.soilMoisture where cast(dateTime as date)=date\\"{}\\"".format(request.form['date']),connection)
+[Mon Feb 27 01:35:29.680802 2023] [wsgi:error] [pid 15976:tid 547920699776] [remote 192.168.1.222:51560]   File "/var/www/basic-flask-app/app.py", line 27, in pullGraph
+[Mon Feb 27 01:35:29.680840 2023] [wsgi:error] [pid 15976:tid 547920699776] [remote 192.168.1.222:51560]     create_cursor.execute(gardenDataInsert)
+[Mon Feb 27 01:35:29.680878 2023] [wsgi:error] [pid 15976:tid 547920699776] [remote 192.168.1.222:51560]   File "/usr/local/lib/python3.9/dist-packages/mysql/connector/cursor.py", line 617, in execute
+[Mon Feb 27 01:35:29.680917 2023] [wsgi:error] [pid 15976:tid 547920699776] [remote 192.168.1.222:51560]     self._handle_result(self._connection.cmd_query(stmt))
+[Mon Feb 27 01:35:29.680955 2023] [wsgi:error] [pid 15976:tid 547920699776] [remote 192.168.1.222:51560]   File "/usr/local/lib/python3.9/dist-packages/mysql/connector/connection.py", line 1046, in cmd_query
+[Mon Feb 27 01:35:29.680995 2023] [wsgi:error] [pid 15976:tid 547920699776] [remote 192.168.1.222:51560]     result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+[Mon Feb 27 01:35:29.681035 2023] [wsgi:error] [pid 15976:tid 547920699776] [remote 192.168.1.222:51560]   File "/usr/local/lib/python3.9/dist-packages/mysql/connector/connection.py", line 824, in _handle_result
+[Mon Feb 27 01:35:29.681074 2023] [wsgi:error] [pid 15976:tid 547920699776] [remote 192.168.1.222:51560]     raise get_exception(packet)
+[Mon Feb 27 01:35:29.681112 2023] [wsgi:error] [pid 15976:tid 547920699776] [remote 192.168.1.222:51560] mysql.connector.errors.DatabaseError: 1525 (HY000): Incorrect DATE value: ''
+[Mon Feb 27 01:40:22.566444 2023] [wsgi:error] [pid 16094:tid 547983860096] [remote 192.168.1.222:51564] [2023-02-27 01:40:22,564] ERROR in app: Exception on /generateDate [POST]
+[Mon Feb 27 01:40:22.566555 2023] [wsgi:error] [pid 16094:tid 547983860096] [remote 192.168.1.222:51564] Traceback (most recent call last):
+[Mon Feb 27 01:40:22.566571 2023] [wsgi:error] [pid 16094:tid 547983860096] [remote 192.168.1.222:51564]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 2525, in wsgi_app
+[Mon Feb 27 01:40:22.566585 2023] [wsgi:error] [pid 16094:tid 547983860096] [remote 192.168.1.222:51564]     response = self.full_dispatch_request()
+[Mon Feb 27 01:40:22.566599 2023] [wsgi:error] [pid 16094:tid 547983860096] [remote 192.168.1.222:51564]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1822, in full_dispatch_request
+[Mon Feb 27 01:40:22.566612 2023] [wsgi:error] [pid 16094:tid 547983860096] [remote 192.168.1.222:51564]     rv = self.handle_user_exception(e)
+[Mon Feb 27 01:40:22.566625 2023] [wsgi:error] [pid 16094:tid 547983860096] [remote 192.168.1.222:51564]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1820, in full_dispatch_request
+[Mon Feb 27 01:40:22.566639 2023] [wsgi:error] [pid 16094:tid 547983860096] [remote 192.168.1.222:51564]     rv = self.dispatch_request()
+[Mon Feb 27 01:40:22.566652 2023] [wsgi:error] [pid 16094:tid 547983860096] [remote 192.168.1.222:51564]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1796, in dispatch_request
+[Mon Feb 27 01:40:22.566696 2023] [wsgi:error] [pid 16094:tid 547983860096] [remote 192.168.1.222:51564]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Mon Feb 27 01:40:22.566710 2023] [wsgi:error] [pid 16094:tid 547983860096] [remote 192.168.1.222:51564]   File "/var/www/basic-flask-app/app.py", line 170, in generateDateData
+[Mon Feb 27 01:40:22.566723 2023] [wsgi:error] [pid 16094:tid 547983860096] [remote 192.168.1.222:51564]     num1 = "/static/" + str(num1) + ".png"
+[Mon Feb 27 01:40:22.566736 2023] [wsgi:error] [pid 16094:tid 547983860096] [remote 192.168.1.222:51564] UnboundLocalError: local variable 'num1' referenced before assignment

@@ -15,6 +15,64 @@ app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
 
+#----------------------------------------------------------------------------------------------------------------------------
+
+#function to save sql pull data to file and create graph and display it from any sql statement
+def pullGraph(statement,connection):
+
+        
+        #pull soilmoisture data from the database
+        gardenDataInsert = statement
+        create_cursor = connection.cursor()
+        create_cursor.execute(gardenDataInsert)
+       
+        #save the pulled data into array
+        pullStorage = create_cursor.fetchall()
+        
+        #sorting of the soilMoisture data pull array *(look into optimising this sorting logic)*
+        newSave = []
+        for (timeDate,x) in pullStorage:
+    
+            newSave.append(timeDate + " " + x)
+
+        newSave2 = []
+        for x in newSave:
+            newSave2.append(x.split(" "))
+
+        #close the cursor and the connection
+        create_cursor.close()
+        connection.close()
+
+
+        #processing of the data pulled from the database getting it ready to be saved to a text doc in gnu format
+        if len(newSave2) >= 1:
+
+            #creates a random int for storing image
+            num1 = random.randint(0,5000000)
+
+            #save new data to file
+            with open('/var/www/basic-flask-app/moistureData.txt', 'w') as f:
+                for line in newSave2:
+                    newString = ""
+                    counter = 0
+                    for x in line:
+                        if counter == 0:
+                            newString = x
+                        if counter == 1:
+                            newString = newString + "---" + x
+                        if counter > 1:
+                            newString = newString + "," + x
+                        counter += 1
+                
+                    f.write(f"{newString}\n")
+            
+            #generate gnu plot and save the graph in the CLI command
+            os.system("gnuplot -p -e \"set terminal png size 1500,1500; set output \'/var/www/basic-flask-app/static/{}.png\'; load \'/var/www/basic-flask-app/gnuMoisturePlotScript\'\"".format(num1))
+            
+            return num1
+        
+        return None
+    
 #---------------------------------------------------------------------------------------------------------------------------
 
 #function to connect to the database and returning the connnection
@@ -68,53 +126,9 @@ def generateDate():
 
         #GLOBAL sql connection to the local hosted daatabase on my raspPI and associated login information using custom function
         connection = databaseConnect()
-
-        #pull soilmoisture data from the database
-        gardenDataInsert = "select * from  garden.soilMoisture"
-        create_cursor = connection.cursor()
-        create_cursor.execute(gardenDataInsert)
-       
-        #save the pulled data into array
-        pullStorage = create_cursor.fetchall()
         
-        #sorting of the soilMoisture data pull array *(look into optimising this sorting logic)*
-        newSave = []
-        for (timeDate,x) in pullStorage:
-    
-            newSave.append(timeDate + " " + x)
-
-        newSave2 = []
-        for x in newSave:
-            newSave2.append(x.split(" "))
-
-        #close the cursor and the connection
-        create_cursor.close()
-        connection.close()
-
-        #creates a random int for storing image
-        num1 = random.randint(0,5000000)
+        num1 = pullGraph("select * from  garden.soilMoisture",connection)
         
-
-        #processing of the data pulled from the database getting it ready to be saved to a text doc in gnu format
-        if len(newSave2) >= 1:
-            with open('/var/www/basic-flask-app/moistureData.txt', 'w') as f:
-                for line in newSave2:
-                    newString = ""
-                    counter = 0
-                    for x in line:
-                        if counter == 0:
-                            newString = x
-                        if counter == 1:
-                            newString = newString + "---" + x
-                        if counter > 1:
-                            newString = newString + "," + x
-                        counter += 1
-                
-                    f.write(f"{newString}\n")
-            
-            #generate gnu plot and save the graph in the CLI command
-            os.system("gnuplot -p -e \"set terminal png size 1500,1500; set output \'/var/www/basic-flask-app/static/{}.png\'; load \'/var/www/basic-flask-app/gnuMoisturePlotScript\'\"".format(num1))
-
         #changing int name to include file path for image display
         num1 = "/static/" + str(num1) + ".png"
 
@@ -123,6 +137,36 @@ def generateDate():
 
 #--------------------------------------------------------------------------------------------------------------------------
 
+#soil moisture data pull processing
+@app.route('/generateDate', methods=["post"])
+def generateDateData():
+
+        #to check if image exists then delete it if it does exist to assit with image display issue
+        for file in os.listdir('/var/www/basic-flask-app/static'):
+            if file.endswith('.png'):
+                stringgg = "/var/www/basic-flask-app/static/{}".format(file)
+                os.remove(stringgg)
+       
+        #asinging num1 a value so it can not crash the system by not having a value
+        num1 = ''
+
+        #if to make sure date has a value input
+        if request.form['date'] != '':
+            #GLOBAL sql connection to the local hosted daatabase on my raspPI and associated login information using custom function
+            connection = databaseConnect()
+        
+            num1 = pullGraph("select * from garden.soilMoisture where cast(dateTime as date)=date\"{}\"".format(request.form['date']),connection)
+
+            
+        
+        #changing int name to include file path for image display
+        num1 = "/static/" + str(num1) + ".png"
+
+        return render_template('main.html', result=num1)
+
+
+
+#--------------------------------------------------------------------------------------------------------------------------
 
 #landing page login form processing
 @app.route('/form', methods=["post"])
