@@ -144,6 +144,23 @@ img{
 	max-height:100%;
 }
 
+#one {
+	display:inline;
+
+}
+
+#two{
+	display:inline;
+
+}
+
+#three{
+	margin-top:10px;
+
+}
+
+
+
 
 /* this below  is code taken as a template then manipulated and adjusted from https://github.com/javascriptacademy-stash/responsive-navbar */
 
@@ -212,11 +229,11 @@ ul li:hover {
 }
 
 #signup {
-  border: 1px solid #ff3860;
+  border: 1px solid #7e442c;
 }
 
 #signup a {
-  color: #ff3860;
+  color: #7e442c;
 }
 
 #login a {
