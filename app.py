@@ -168,6 +168,37 @@ def generateDateData():
 
 #--------------------------------------------------------------------------------------------------------------------------
 
+#soil moisture between dates pull processing
+@app.route('/generateDateTwo', methods=["post"])
+def generateDateTwo():
+
+        #to check if image exists then delete it if it does exist to assit with image display issue
+        for file in os.listdir('/var/www/basic-flask-app/static'):
+            if file.endswith('.png'):
+                stringgg = "/var/www/basic-flask-app/static/{}".format(file)
+                os.remove(stringgg)
+       
+        #asinging num1 a value so it can not crash the system by not having a value
+        num1 = ''
+
+        #if to make sure date has a value input
+        if (request.form['dateTwo'] != '') and (request.form['dateThree'] != ''):
+            #GLOBAL sql connection to the local hosted daatabase on my raspPI and associated login information using custom function
+            connection = databaseConnect()
+        
+            num1 = pullGraph("select * from garden.soilMoisture where cast(dateTime as date) BETWEEN date\"{}\" AND date\"{}\";".format(request.form['dateTwo'],request.form['dateThree']),connection)
+
+            
+        
+        #changing int name to include file path for image display
+        num1 = "/static/" + str(num1) + ".png"
+
+        return render_template('main.html', result=num1)
+
+
+
+#---------------------------------------------------------------------------------------------------------------------------
+
 #landing page login form processing
 @app.route('/form', methods=["post"])
 def form():

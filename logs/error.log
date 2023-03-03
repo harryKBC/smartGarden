@@ -552,3 +552,21 @@ Warning: empty y range [17:17], adjusting to [16.83:17.17]
 [Mon Feb 27 01:40:22.566710 2023] [wsgi:error] [pid 16094:tid 547983860096] [remote 192.168.1.222:51564]   File "/var/www/basic-flask-app/app.py", line 170, in generateDateData
 [Mon Feb 27 01:40:22.566723 2023] [wsgi:error] [pid 16094:tid 547983860096] [remote 192.168.1.222:51564]     num1 = "/static/" + str(num1) + ".png"
 [Mon Feb 27 01:40:22.566736 2023] [wsgi:error] [pid 16094:tid 547983860096] [remote 192.168.1.222:51564] UnboundLocalError: local variable 'num1' referenced before assignment
+[Fri Mar 03 05:34:49.230284 2023] [wsgi:error] [pid 23659:tid 547565687168] [remote 192.168.1.222:63486] mod_wsgi (pid=23659): Failed to exec Python script file '/var/www/basic-flask-app/app.wsgi'.
+[Fri Mar 03 05:34:49.230622 2023] [wsgi:error] [pid 23659:tid 547565687168] [remote 192.168.1.222:63486] mod_wsgi (pid=23659): Exception occurred processing WSGI script '/var/www/basic-flask-app/app.wsgi'.
+[Fri Mar 03 05:34:49.246645 2023] [wsgi:error] [pid 23659:tid 547565687168] [remote 192.168.1.222:63486] Traceback (most recent call last):
+[Fri Mar 03 05:34:49.246893 2023] [wsgi:error] [pid 23659:tid 547565687168] [remote 192.168.1.222:63486]   File "/var/www/basic-flask-app/app.wsgi", line 9, in <module>
+[Fri Mar 03 05:34:49.246946 2023] [wsgi:error] [pid 23659:tid 547565687168] [remote 192.168.1.222:63486]     from app import app as application
+[Fri Mar 03 05:34:49.247068 2023] [wsgi:error] [pid 23659:tid 547565687168] [remote 192.168.1.222:63486]   File "/var/www/basic-flask-app/app.py", line 185
+[Fri Mar 03 05:34:49.247184 2023] [wsgi:error] [pid 23659:tid 547565687168] [remote 192.168.1.222:63486]     if (request.form['dateTwo'] != '') && (request.form['dateThree'] != ''):
+[Fri Mar 03 05:34:49.247348 2023] [wsgi:error] [pid 23659:tid 547565687168] [remote 192.168.1.222:63486]                                         ^
+[Fri Mar 03 05:34:49.247448 2023] [wsgi:error] [pid 23659:tid 547565687168] [remote 192.168.1.222:63486] SyntaxError: invalid syntax
+[Fri Mar 03 05:34:49.344496 2023] [wsgi:error] [pid 23659:tid 547532116352] [remote 192.168.1.222:63487] mod_wsgi (pid=23659): Failed to exec Python script file '/var/www/basic-flask-app/app.wsgi'.
+[Fri Mar 03 05:34:49.344644 2023] [wsgi:error] [pid 23659:tid 547532116352] [remote 192.168.1.222:63487] mod_wsgi (pid=23659): Exception occurred processing WSGI script '/var/www/basic-flask-app/app.wsgi'.
+[Fri Mar 03 05:34:49.344876 2023] [wsgi:error] [pid 23659:tid 547532116352] [remote 192.168.1.222:63487] Traceback (most recent call last):
+[Fri Mar 03 05:34:49.344948 2023] [wsgi:error] [pid 23659:tid 547532116352] [remote 192.168.1.222:63487]   File "/var/www/basic-flask-app/app.wsgi", line 9, in <module>
+[Fri Mar 03 05:34:49.344966 2023] [wsgi:error] [pid 23659:tid 547532116352] [remote 192.168.1.222:63487]     from app import app as application
+[Fri Mar 03 05:34:49.345011 2023] [wsgi:error] [pid 23659:tid 547532116352] [remote 192.168.1.222:63487]   File "/var/www/basic-flask-app/app.py", line 185
+[Fri Mar 03 05:34:49.345053 2023] [wsgi:error] [pid 23659:tid 547532116352] [remote 192.168.1.222:63487]     if (request.form['dateTwo'] != '') && (request.form['dateThree'] != ''):
+[Fri Mar 03 05:34:49.345117 2023] [wsgi:error] [pid 23659:tid 547532116352] [remote 192.168.1.222:63487]                                         ^
+[Fri Mar 03 05:34:49.345151 2023] [wsgi:error] [pid 23659:tid 547532116352] [remote 192.168.1.222:63487] SyntaxError: invalid syntax
