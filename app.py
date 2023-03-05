@@ -5,14 +5,26 @@
 #----------------------------------------------------------------------------------------------------------------------------
 
 #libaries used in the processing of this application
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, session
 import os
 import mysql.connector
 import random
 app = Flask(__name__)
-
+app.secret_key = "randomPassword"
 #reduce the file age to 0 to save space and assist with image cacheing problem - need to test how this effects session storage and cookies
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
+
+#-----------------------------------------------------------------------------------------------------------------------------
+#function to remove the previous image when new image is generated
+def removeImage():
+
+    #to check if image exists then delete it if it does exist to assit with image display issue
+    for file in os.listdir('/var/www/basic-flask-app/static'):
+        if file.endswith('.png'):
+            stringgg = "/var/www/basic-flask-app/static/{}".format(file)
+            os.remove(stringgg) 
+
+    return None
 
 
 #----------------------------------------------------------------------------------------------------------------------------
@@ -119,20 +131,19 @@ def index():
 def generateDate():
 
         #to check if image exists then delete it if it does exist to assit with image display issue
-        for file in os.listdir('/var/www/basic-flask-app/static'):
-            if file.endswith('.png'):
-                stringgg = "/var/www/basic-flask-app/static/{}".format(file)
-                os.remove(stringgg) 
+        removeImage()     
 
         #GLOBAL sql connection to the local hosted daatabase on my raspPI and associated login information using custom function
         connection = databaseConnect()
         
         num1 = pullGraph("select * from  garden.soilMoisture",connection)
         
-        #changing int name to include file path for image display
-        num1 = "/static/" + str(num1) + ".png"
-
-        return render_template('main.html', result=num1)
+        if num1 is not None:
+            #changing int name to include file path for image display
+            num1 = "/static/" + str(num1) + ".png"
+            return render_template('main.html', result=[session["user"],num1])
+        
+        return render_template('main.html', result=[session["user"]])
 
 
 #--------------------------------------------------------------------------------------------------------------------------
@@ -142,13 +153,8 @@ def generateDate():
 def generateDateData():
 
         #to check if image exists then delete it if it does exist to assit with image display issue
-        for file in os.listdir('/var/www/basic-flask-app/static'):
-            if file.endswith('.png'):
-                stringgg = "/var/www/basic-flask-app/static/{}".format(file)
-                os.remove(stringgg)
-       
-        #asinging num1 a value so it can not crash the system by not having a value
-        num1 = ''
+        removeImage()      
+
 
         #if to make sure date has a value input
         if request.form['date'] != '':
@@ -157,13 +163,13 @@ def generateDateData():
         
             num1 = pullGraph("select * from garden.soilMoisture where cast(dateTime as date)=date\"{}\"".format(request.form['date']),connection)
 
-            
+           #if statement to make sure a value comes back to return to the frontend value wont come back if no graph is generated 
+            if num1 is not None:
+                #changing int name to include file path for image display
+                num1 = "/static/" + str(num1) + ".png"
+                return render_template('main.html', result=[session["user"],num1])
         
-        #changing int name to include file path for image display
-        num1 = "/static/" + str(num1) + ".png"
-
-        return render_template('main.html', result=num1)
-
+        return render_template('main.html', result=[session["user"]])
 
 
 #--------------------------------------------------------------------------------------------------------------------------
@@ -173,13 +179,8 @@ def generateDateData():
 def generateDateTwo():
 
         #to check if image exists then delete it if it does exist to assit with image display issue
-        for file in os.listdir('/var/www/basic-flask-app/static'):
-            if file.endswith('.png'):
-                stringgg = "/var/www/basic-flask-app/static/{}".format(file)
-                os.remove(stringgg)
+        removeImage() 
        
-        #asinging num1 a value so it can not crash the system by not having a value
-        num1 = ''
 
         #if to make sure date has a value input
         if (request.form['dateTwo'] != '') and (request.form['dateThree'] != ''):
@@ -188,12 +189,13 @@ def generateDateTwo():
         
             num1 = pullGraph("select * from garden.soilMoisture where cast(dateTime as date) BETWEEN date\"{}\" AND date\"{}\";".format(request.form['dateTwo'],request.form['dateThree']),connection)
 
-            
+            #if statement to make sure a value comes back to return to the frontend value wont come back if no graph is generated 
+            if num1 is not None:
+                #changing int name to include file path for image display
+                num1 = "/static/" + str(num1) + ".png"
+                return render_template('main.html', result=[session["user"],num1])
         
-        #changing int name to include file path for image display
-        num1 = "/static/" + str(num1) + ".png"
-
-        return render_template('main.html', result=num1)
+        return render_template('main.html', result=[session["user"]])
 
 
 
@@ -224,7 +226,9 @@ def form():
         #checks to see if the password matches if the username exists
         if len(pulledValues) == 1:
             if pulledValues[0][1] == request.form['Password']:
-                return render_template('main.html', result = "welcome")
+                #adding the user to the session then returning the main page
+                session["user"] = request.form['user-name']
+                return render_template('main.html',result=[session["user"]])
             else:
                  return render_template('index.html', result = "Password Incorrect")
         else:
@@ -242,6 +246,33 @@ def form():
 #--------------------------------------------------------------------------------------------------------------------------
 
 
+#clearing session on logout
+@app.route('/logout')
+def logout():
+    
+    #removing the user from session
+    session.pop("user",None)
+
+    return render_template('index.html', result = "logout success")
+
+
+#--------------------------------------------------------------------------------------------------------------------------
+
+#checking to see if user is logged in and navigating to the main user page
+@app.route('/mainNav')
+def mainNav():
+    
+    #checking if user is inn session before sending to page to avoid hacking
+    if "user" in session:
+        return render_template('main.html', result = [session["user"]])
+    else:
+        return render_template('index.html', result = "You needa login brah")
+
+
+
+#--------------------------------------------------------------------------------------------------------------------------
+
+    
 #function taken from stackoverflow https://stackoverflow.com/questions/34066804/disabling-caching-in-flask to remove cache for images - need to test how this effects session storage and cookies
 @app.after_request
 def add_header(r):

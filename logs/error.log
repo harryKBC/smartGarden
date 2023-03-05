@@ -570,3 +570,105 @@ Warning: empty y range [17:17], adjusting to [16.83:17.17]
 [Fri Mar 03 05:34:49.345053 2023] [wsgi:error] [pid 23659:tid 547532116352] [remote 192.168.1.222:63487]     if (request.form['dateTwo'] != '') && (request.form['dateThree'] != ''):
 [Fri Mar 03 05:34:49.345117 2023] [wsgi:error] [pid 23659:tid 547532116352] [remote 192.168.1.222:63487]                                         ^
 [Fri Mar 03 05:34:49.345151 2023] [wsgi:error] [pid 23659:tid 547532116352] [remote 192.168.1.222:63487] SyntaxError: invalid syntax
+Warning: empty y range [0:0], adjusting to [-1:1]
+Warning: empty x range [1.67792e+09:1.67792e+09], adjusting to [1.66114e+09:1.6947e+09]
+Warning: empty y range [237:237], adjusting to [234.63:239.37]
+Warning: empty x range [1.67792e+09:1.67792e+09], adjusting to [1.66114e+09:1.6947e+09]
+Warning: empty y range [237:237], adjusting to [234.63:239.37]
+Warning: empty x range [1.67792e+09:1.67792e+09], adjusting to [1.66114e+09:1.6947e+09]
+Warning: empty y range [237:237], adjusting to [234.63:239.37]
+Warning: empty x range [1.67792e+09:1.67792e+09], adjusting to [1.66114e+09:1.6947e+09]
+Warning: empty y range [237:237], adjusting to [234.63:239.37]
+Warning: empty x range [1.67792e+09:1.67792e+09], adjusting to [1.66114e+09:1.6947e+09]
+Warning: empty y range [237:237], adjusting to [234.63:239.37]
+Warning: empty x range [1.67792e+09:1.67792e+09], adjusting to [1.66114e+09:1.6947e+09]
+Warning: empty y range [237:237], adjusting to [234.63:239.37]
+Warning: empty y range [237:237], adjusting to [234.63:239.37]
+Warning: empty y range [237:237], adjusting to [234.63:239.37]
+Warning: empty y range [237:237], adjusting to [234.63:239.37]
+[Sun Mar 05 06:03:54.286347 2023] [wsgi:error] [pid 31025:tid 548363243904] [remote 192.168.1.158:62922] [2023-03-05 06:03:54,279] ERROR in app: Exception on /form [POST]
+[Sun Mar 05 06:03:54.286466 2023] [wsgi:error] [pid 31025:tid 548363243904] [remote 192.168.1.158:62922] Traceback (most recent call last):
+[Sun Mar 05 06:03:54.286482 2023] [wsgi:error] [pid 31025:tid 548363243904] [remote 192.168.1.158:62922]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 2525, in wsgi_app
+[Sun Mar 05 06:03:54.286495 2023] [wsgi:error] [pid 31025:tid 548363243904] [remote 192.168.1.158:62922]     response = self.full_dispatch_request()
+[Sun Mar 05 06:03:54.286512 2023] [wsgi:error] [pid 31025:tid 548363243904] [remote 192.168.1.158:62922]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1822, in full_dispatch_request
+[Sun Mar 05 06:03:54.286525 2023] [wsgi:error] [pid 31025:tid 548363243904] [remote 192.168.1.158:62922]     rv = self.handle_user_exception(e)
+[Sun Mar 05 06:03:54.286538 2023] [wsgi:error] [pid 31025:tid 548363243904] [remote 192.168.1.158:62922]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1820, in full_dispatch_request
+[Sun Mar 05 06:03:54.286551 2023] [wsgi:error] [pid 31025:tid 548363243904] [remote 192.168.1.158:62922]     rv = self.dispatch_request()
+[Sun Mar 05 06:03:54.286563 2023] [wsgi:error] [pid 31025:tid 548363243904] [remote 192.168.1.158:62922]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1796, in dispatch_request
+[Sun Mar 05 06:03:54.286576 2023] [wsgi:error] [pid 31025:tid 548363243904] [remote 192.168.1.158:62922]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sun Mar 05 06:03:54.286588 2023] [wsgi:error] [pid 31025:tid 548363243904] [remote 192.168.1.158:62922]   File "/var/www/basic-flask-app/app.py", line 232, in form
+[Sun Mar 05 06:03:54.286601 2023] [wsgi:error] [pid 31025:tid 548363243904] [remote 192.168.1.158:62922]     return render_template('main.html', result = session["user"])
+[Sun Mar 05 06:03:54.286613 2023] [wsgi:error] [pid 31025:tid 548363243904] [remote 192.168.1.158:62922]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/templating.py", line 147, in render_template
+[Sun Mar 05 06:03:54.286626 2023] [wsgi:error] [pid 31025:tid 548363243904] [remote 192.168.1.158:62922]     return _render(app, template, context)
+[Sun Mar 05 06:03:54.286638 2023] [wsgi:error] [pid 31025:tid 548363243904] [remote 192.168.1.158:62922]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/templating.py", line 130, in _render
+[Sun Mar 05 06:03:54.286651 2023] [wsgi:error] [pid 31025:tid 548363243904] [remote 192.168.1.158:62922]     rv = template.render(context)
+[Sun Mar 05 06:03:54.286663 2023] [wsgi:error] [pid 31025:tid 548363243904] [remote 192.168.1.158:62922]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/jinja2/environment.py", line 1301, in render
+[Sun Mar 05 06:03:54.286698 2023] [wsgi:error] [pid 31025:tid 548363243904] [remote 192.168.1.158:62922]     self.environment.handle_exception()
+[Sun Mar 05 06:03:54.286711 2023] [wsgi:error] [pid 31025:tid 548363243904] [remote 192.168.1.158:62922]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+[Sun Mar 05 06:03:54.286724 2023] [wsgi:error] [pid 31025:tid 548363243904] [remote 192.168.1.158:62922]     raise rewrite_traceback_stack(source=source)
+[Sun Mar 05 06:03:54.286736 2023] [wsgi:error] [pid 31025:tid 548363243904] [remote 192.168.1.158:62922]   File "/var/www/basic-flask-app/templates/main.html", line 84, in top-level template code
+[Sun Mar 05 06:03:54.286748 2023] [wsgi:error] [pid 31025:tid 548363243904] [remote 192.168.1.158:62922]     {% if result is None %}
+[Sun Mar 05 06:03:54.286760 2023] [wsgi:error] [pid 31025:tid 548363243904] [remote 192.168.1.158:62922] jinja2.exceptions.TemplateRuntimeError: No test named 'None' found.
+[Sun Mar 05 06:04:03.377693 2023] [wsgi:error] [pid 31025:tid 548329673088] [remote 192.168.1.158:62927] [2023-03-05 06:04:03,372] ERROR in app: Exception on /form [POST]
+[Sun Mar 05 06:04:03.377848 2023] [wsgi:error] [pid 31025:tid 548329673088] [remote 192.168.1.158:62927] Traceback (most recent call last):
+[Sun Mar 05 06:04:03.377893 2023] [wsgi:error] [pid 31025:tid 548329673088] [remote 192.168.1.158:62927]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 2525, in wsgi_app
+[Sun Mar 05 06:04:03.377935 2023] [wsgi:error] [pid 31025:tid 548329673088] [remote 192.168.1.158:62927]     response = self.full_dispatch_request()
+[Sun Mar 05 06:04:03.377975 2023] [wsgi:error] [pid 31025:tid 548329673088] [remote 192.168.1.158:62927]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1822, in full_dispatch_request
+[Sun Mar 05 06:04:03.378016 2023] [wsgi:error] [pid 31025:tid 548329673088] [remote 192.168.1.158:62927]     rv = self.handle_user_exception(e)
+[Sun Mar 05 06:04:03.378052 2023] [wsgi:error] [pid 31025:tid 548329673088] [remote 192.168.1.158:62927]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1820, in full_dispatch_request
+[Sun Mar 05 06:04:03.378090 2023] [wsgi:error] [pid 31025:tid 548329673088] [remote 192.168.1.158:62927]     rv = self.dispatch_request()
+[Sun Mar 05 06:04:03.378127 2023] [wsgi:error] [pid 31025:tid 548329673088] [remote 192.168.1.158:62927]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1796, in dispatch_request
+[Sun Mar 05 06:04:03.378166 2023] [wsgi:error] [pid 31025:tid 548329673088] [remote 192.168.1.158:62927]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sun Mar 05 06:04:03.378204 2023] [wsgi:error] [pid 31025:tid 548329673088] [remote 192.168.1.158:62927]   File "/var/www/basic-flask-app/app.py", line 232, in form
+[Sun Mar 05 06:04:03.378241 2023] [wsgi:error] [pid 31025:tid 548329673088] [remote 192.168.1.158:62927]     return render_template('main.html', result = session["user"])
+[Sun Mar 05 06:04:03.378279 2023] [wsgi:error] [pid 31025:tid 548329673088] [remote 192.168.1.158:62927]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/templating.py", line 147, in render_template
+[Sun Mar 05 06:04:03.378317 2023] [wsgi:error] [pid 31025:tid 548329673088] [remote 192.168.1.158:62927]     return _render(app, template, context)
+[Sun Mar 05 06:04:03.378354 2023] [wsgi:error] [pid 31025:tid 548329673088] [remote 192.168.1.158:62927]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/templating.py", line 130, in _render
+[Sun Mar 05 06:04:03.378392 2023] [wsgi:error] [pid 31025:tid 548329673088] [remote 192.168.1.158:62927]     rv = template.render(context)
+[Sun Mar 05 06:04:03.378490 2023] [wsgi:error] [pid 31025:tid 548329673088] [remote 192.168.1.158:62927]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/jinja2/environment.py", line 1301, in render
+[Sun Mar 05 06:04:03.378531 2023] [wsgi:error] [pid 31025:tid 548329673088] [remote 192.168.1.158:62927]     self.environment.handle_exception()
+[Sun Mar 05 06:04:03.378570 2023] [wsgi:error] [pid 31025:tid 548329673088] [remote 192.168.1.158:62927]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+[Sun Mar 05 06:04:03.378608 2023] [wsgi:error] [pid 31025:tid 548329673088] [remote 192.168.1.158:62927]     raise rewrite_traceback_stack(source=source)
+[Sun Mar 05 06:04:03.378645 2023] [wsgi:error] [pid 31025:tid 548329673088] [remote 192.168.1.158:62927]   File "/var/www/basic-flask-app/templates/main.html", line 84, in top-level template code
+[Sun Mar 05 06:04:03.378682 2023] [wsgi:error] [pid 31025:tid 548329673088] [remote 192.168.1.158:62927]     {% if result is None %}
+[Sun Mar 05 06:04:03.378718 2023] [wsgi:error] [pid 31025:tid 548329673088] [remote 192.168.1.158:62927] jinja2.exceptions.TemplateRuntimeError: No test named 'None' found.
+[Sun Mar 05 06:21:18.847223 2023] [wsgi:error] [pid 31690:tid 547917857152] [remote 192.168.1.158:63401] mod_wsgi (pid=31690): Failed to exec Python script file '/var/www/basic-flask-app/app.wsgi'.
+[Sun Mar 05 06:21:18.847391 2023] [wsgi:error] [pid 31690:tid 547917857152] [remote 192.168.1.158:63401] mod_wsgi (pid=31690): Exception occurred processing WSGI script '/var/www/basic-flask-app/app.wsgi'.
+[Sun Mar 05 06:21:18.853698 2023] [wsgi:error] [pid 31690:tid 547917857152] [remote 192.168.1.158:63401] Traceback (most recent call last):
+[Sun Mar 05 06:21:18.853819 2023] [wsgi:error] [pid 31690:tid 547917857152] [remote 192.168.1.158:63401]   File "/var/www/basic-flask-app/app.wsgi", line 9, in <module>
+[Sun Mar 05 06:21:18.853838 2023] [wsgi:error] [pid 31690:tid 547917857152] [remote 192.168.1.158:63401]     from app import app as application
+[Sun Mar 05 06:21:18.853882 2023] [wsgi:error] [pid 31690:tid 547917857152] [remote 192.168.1.158:63401]   File "/var/www/basic-flask-app/app.py", line 141
+[Sun Mar 05 06:21:18.853922 2023] [wsgi:error] [pid 31690:tid 547917857152] [remote 192.168.1.158:63401]     if num1 not None:
+[Sun Mar 05 06:21:18.853973 2023] [wsgi:error] [pid 31690:tid 547917857152] [remote 192.168.1.158:63401]                 ^
+[Sun Mar 05 06:21:18.854007 2023] [wsgi:error] [pid 31690:tid 547917857152] [remote 192.168.1.158:63401] SyntaxError: invalid syntax
+[Sun Mar 05 06:21:18.910321 2023] [wsgi:error] [pid 31690:tid 547884286336] [remote 192.168.1.158:63402] mod_wsgi (pid=31690): Failed to exec Python script file '/var/www/basic-flask-app/app.wsgi'.
+[Sun Mar 05 06:21:18.910462 2023] [wsgi:error] [pid 31690:tid 547884286336] [remote 192.168.1.158:63402] mod_wsgi (pid=31690): Exception occurred processing WSGI script '/var/www/basic-flask-app/app.wsgi'.
+[Sun Mar 05 06:21:18.910686 2023] [wsgi:error] [pid 31690:tid 547884286336] [remote 192.168.1.158:63402] Traceback (most recent call last):
+[Sun Mar 05 06:21:18.910762 2023] [wsgi:error] [pid 31690:tid 547884286336] [remote 192.168.1.158:63402]   File "/var/www/basic-flask-app/app.wsgi", line 9, in <module>
+[Sun Mar 05 06:21:18.910779 2023] [wsgi:error] [pid 31690:tid 547884286336] [remote 192.168.1.158:63402]     from app import app as application
+[Sun Mar 05 06:21:18.910824 2023] [wsgi:error] [pid 31690:tid 547884286336] [remote 192.168.1.158:63402]   File "/var/www/basic-flask-app/app.py", line 141
+[Sun Mar 05 06:21:18.910866 2023] [wsgi:error] [pid 31690:tid 547884286336] [remote 192.168.1.158:63402]     if num1 not None:
+[Sun Mar 05 06:21:18.910919 2023] [wsgi:error] [pid 31690:tid 547884286336] [remote 192.168.1.158:63402]                 ^
+[Sun Mar 05 06:21:18.910953 2023] [wsgi:error] [pid 31690:tid 547884286336] [remote 192.168.1.158:63402] SyntaxError: invalid syntax
+[Sun Mar 05 06:21:57.614392 2023] [wsgi:error] [pid 31690:tid 547917857152] [remote 192.168.1.184:53096] mod_wsgi (pid=31690): Failed to exec Python script file '/var/www/basic-flask-app/app.wsgi'.
+[Sun Mar 05 06:21:57.614688 2023] [wsgi:error] [pid 31690:tid 547917857152] [remote 192.168.1.184:53096] mod_wsgi (pid=31690): Exception occurred processing WSGI script '/var/www/basic-flask-app/app.wsgi'.
+[Sun Mar 05 06:21:57.615168 2023] [wsgi:error] [pid 31690:tid 547917857152] [remote 192.168.1.184:53096] Traceback (most recent call last):
+[Sun Mar 05 06:21:57.615341 2023] [wsgi:error] [pid 31690:tid 547917857152] [remote 192.168.1.184:53096]   File "/var/www/basic-flask-app/app.wsgi", line 9, in <module>
+[Sun Mar 05 06:21:57.615394 2023] [wsgi:error] [pid 31690:tid 547917857152] [remote 192.168.1.184:53096]     from app import app as application
+[Sun Mar 05 06:21:57.615520 2023] [wsgi:error] [pid 31690:tid 547917857152] [remote 192.168.1.184:53096]   File "/var/www/basic-flask-app/app.py", line 141
+[Sun Mar 05 06:21:57.615635 2023] [wsgi:error] [pid 31690:tid 547917857152] [remote 192.168.1.184:53096]     if num1 not None:
+[Sun Mar 05 06:21:57.615780 2023] [wsgi:error] [pid 31690:tid 547917857152] [remote 192.168.1.184:53096]                 ^
+[Sun Mar 05 06:21:57.615881 2023] [wsgi:error] [pid 31690:tid 547917857152] [remote 192.168.1.184:53096] SyntaxError: invalid syntax
+[Sun Mar 05 06:26:15.721746 2023] [wsgi:error] [pid 31826:tid 548613218688] [remote 192.168.1.158:63585] [2023-03-05 06:26:15,719] ERROR in app: Exception on /generateDate [POST]
+[Sun Mar 05 06:26:15.721856 2023] [wsgi:error] [pid 31826:tid 548613218688] [remote 192.168.1.158:63585] Traceback (most recent call last):
+[Sun Mar 05 06:26:15.721871 2023] [wsgi:error] [pid 31826:tid 548613218688] [remote 192.168.1.158:63585]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 2525, in wsgi_app
+[Sun Mar 05 06:26:15.721885 2023] [wsgi:error] [pid 31826:tid 548613218688] [remote 192.168.1.158:63585]     response = self.full_dispatch_request()
+[Sun Mar 05 06:26:15.721898 2023] [wsgi:error] [pid 31826:tid 548613218688] [remote 192.168.1.158:63585]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1822, in full_dispatch_request
+[Sun Mar 05 06:26:15.721911 2023] [wsgi:error] [pid 31826:tid 548613218688] [remote 192.168.1.158:63585]     rv = self.handle_user_exception(e)
+[Sun Mar 05 06:26:15.721924 2023] [wsgi:error] [pid 31826:tid 548613218688] [remote 192.168.1.158:63585]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1820, in full_dispatch_request
+[Sun Mar 05 06:26:15.721937 2023] [wsgi:error] [pid 31826:tid 548613218688] [remote 192.168.1.158:63585]     rv = self.dispatch_request()
+[Sun Mar 05 06:26:15.721950 2023] [wsgi:error] [pid 31826:tid 548613218688] [remote 192.168.1.158:63585]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1796, in dispatch_request
+[Sun Mar 05 06:26:15.721963 2023] [wsgi:error] [pid 31826:tid 548613218688] [remote 192.168.1.158:63585]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sun Mar 05 06:26:15.721976 2023] [wsgi:error] [pid 31826:tid 548613218688] [remote 192.168.1.158:63585]   File "/var/www/basic-flask-app/app.py", line 169, in generateDateData
+[Sun Mar 05 06:26:15.721989 2023] [wsgi:error] [pid 31826:tid 548613218688] [remote 192.168.1.158:63585]     if num1 is not None:
+[Sun Mar 05 06:26:15.722001 2023] [wsgi:error] [pid 31826:tid 548613218688] [remote 192.168.1.158:63585] UnboundLocalError: local variable 'num1' referenced before assignment
