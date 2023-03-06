@@ -672,3 +672,18 @@ Warning: empty y range [237:237], adjusting to [234.63:239.37]
 [Sun Mar 05 06:26:15.721976 2023] [wsgi:error] [pid 31826:tid 548613218688] [remote 192.168.1.158:63585]   File "/var/www/basic-flask-app/app.py", line 169, in generateDateData
 [Sun Mar 05 06:26:15.721989 2023] [wsgi:error] [pid 31826:tid 548613218688] [remote 192.168.1.158:63585]     if num1 is not None:
 [Sun Mar 05 06:26:15.722001 2023] [wsgi:error] [pid 31826:tid 548613218688] [remote 192.168.1.158:63585] UnboundLocalError: local variable 'num1' referenced before assignment
+[Sun Mar 05 09:37:39.737389 2023] [wsgi:error] [pid 32730:tid 547536064896] [remote 192.168.1.206:45670] [2023-03-05 09:37:39,733] ERROR in app: Exception on /generate [POST]
+[Sun Mar 05 09:37:39.737499 2023] [wsgi:error] [pid 32730:tid 547536064896] [remote 192.168.1.206:45670] Traceback (most recent call last):
+[Sun Mar 05 09:37:39.737540 2023] [wsgi:error] [pid 32730:tid 547536064896] [remote 192.168.1.206:45670]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 2525, in wsgi_app
+[Sun Mar 05 09:37:39.737555 2023] [wsgi:error] [pid 32730:tid 547536064896] [remote 192.168.1.206:45670]     response = self.full_dispatch_request()
+[Sun Mar 05 09:37:39.737568 2023] [wsgi:error] [pid 32730:tid 547536064896] [remote 192.168.1.206:45670]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1822, in full_dispatch_request
+[Sun Mar 05 09:37:39.737581 2023] [wsgi:error] [pid 32730:tid 547536064896] [remote 192.168.1.206:45670]     rv = self.handle_user_exception(e)
+[Sun Mar 05 09:37:39.737593 2023] [wsgi:error] [pid 32730:tid 547536064896] [remote 192.168.1.206:45670]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1820, in full_dispatch_request
+[Sun Mar 05 09:37:39.737606 2023] [wsgi:error] [pid 32730:tid 547536064896] [remote 192.168.1.206:45670]     rv = self.dispatch_request()
+[Sun Mar 05 09:37:39.737618 2023] [wsgi:error] [pid 32730:tid 547536064896] [remote 192.168.1.206:45670]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1796, in dispatch_request
+[Sun Mar 05 09:37:39.737631 2023] [wsgi:error] [pid 32730:tid 547536064896] [remote 192.168.1.206:45670]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sun Mar 05 09:37:39.737643 2023] [wsgi:error] [pid 32730:tid 547536064896] [remote 192.168.1.206:45670]   File "/var/www/basic-flask-app/app.py", line 144, in generateDate
+[Sun Mar 05 09:37:39.737655 2023] [wsgi:error] [pid 32730:tid 547536064896] [remote 192.168.1.206:45670]     return render_template('main.html', result=[session["user"],num1])
+[Sun Mar 05 09:37:39.737668 2023] [wsgi:error] [pid 32730:tid 547536064896] [remote 192.168.1.206:45670]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/sessions.py", line 80, in __getitem__
+[Sun Mar 05 09:37:39.737680 2023] [wsgi:error] [pid 32730:tid 547536064896] [remote 192.168.1.206:45670]     return super().__getitem__(key)
+[Sun Mar 05 09:37:39.737692 2023] [wsgi:error] [pid 32730:tid 547536064896] [remote 192.168.1.206:45670] KeyError: 'user'
