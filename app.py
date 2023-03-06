@@ -10,11 +10,15 @@ import os
 import mysql.connector
 import random
 app = Flask(__name__)
+
+#session secret key
 app.secret_key = "randomPassword"
+
 #reduce the file age to 0 to save space and assist with image cacheing problem - need to test how this effects session storage and cookies
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
 #-----------------------------------------------------------------------------------------------------------------------------
+
 #function to remove the previous image when new image is generated
 def removeImage():
 
@@ -135,7 +139,7 @@ def generateDate():
 
         #GLOBAL sql connection to the local hosted daatabase on my raspPI and associated login information using custom function
         connection = databaseConnect()
-        
+        #calling custom function to create the graph 
         num1 = pullGraph("select * from  garden.soilMoisture",connection)
         
         if num1 is not None:
@@ -160,7 +164,7 @@ def generateDateData():
         if request.form['date'] != '':
             #GLOBAL sql connection to the local hosted daatabase on my raspPI and associated login information using custom function
             connection = databaseConnect()
-        
+            #calling custom function to create the graph 
             num1 = pullGraph("select * from garden.soilMoisture where cast(dateTime as date)=date\"{}\"".format(request.form['date']),connection)
 
            #if statement to make sure a value comes back to return to the frontend value wont come back if no graph is generated 
@@ -186,7 +190,7 @@ def generateDateTwo():
         if (request.form['dateTwo'] != '') and (request.form['dateThree'] != ''):
             #GLOBAL sql connection to the local hosted daatabase on my raspPI and associated login information using custom function
             connection = databaseConnect()
-        
+            #calling custom function to create the graph 
             num1 = pullGraph("select * from garden.soilMoisture where cast(dateTime as date) BETWEEN date\"{}\" AND date\"{}\";".format(request.form['dateTwo'],request.form['dateThree']),connection)
 
             #if statement to make sure a value comes back to return to the frontend value wont come back if no graph is generated 
@@ -262,7 +266,7 @@ def logout():
 @app.route('/mainNav')
 def mainNav():
     
-    #checking if user is inn session before sending to page to avoid hacking
+    #checking if user is in session before sending to page to avoid hacking
     if "user" in session:
         return render_template('main.html', result = [session["user"]])
     else:
