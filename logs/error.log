@@ -687,3 +687,25 @@ Warning: empty y range [237:237], adjusting to [234.63:239.37]
 [Sun Mar 05 09:37:39.737668 2023] [wsgi:error] [pid 32730:tid 547536064896] [remote 192.168.1.206:45670]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/sessions.py", line 80, in __getitem__
 [Sun Mar 05 09:37:39.737680 2023] [wsgi:error] [pid 32730:tid 547536064896] [remote 192.168.1.206:45670]     return super().__getitem__(key)
 [Sun Mar 05 09:37:39.737692 2023] [wsgi:error] [pid 32730:tid 547536064896] [remote 192.168.1.206:45670] KeyError: 'user'
+[Thu Mar 09 03:09:09.480094 2023] [access_compat:error] [pid 29213:tid 548542280064] [client 192.168.1.222:50554] AH01797: client denied by server configuration: /var/www/html/admin
+Warning: empty x range [1.67847e+09:1.67847e+09], adjusting to [1.66169e+09:1.69526e+09]
+Warning: empty y range [44:44], adjusting to [43.56:44.44]
+Warning: empty x range [1.67847e+09:1.67847e+09], adjusting to [1.66169e+09:1.69526e+09]
+Warning: empty y range [44:44], adjusting to [43.56:44.44]
+Warning: empty x range [1.67854e+09:1.67854e+09], adjusting to [1.66175e+09:1.69532e+09]
+Warning: empty y range [473:473], adjusting to [468.27:477.73]
+[Tue Mar 14 07:32:27.914156 2023] [wsgi:error] [pid 30888] [remote 192.168.1.171:58306] [2023-03-14 07:32:27,905] ERROR in app: Exception on /generate [POST]
+[Tue Mar 14 07:32:27.914284 2023] [wsgi:error] [pid 30888] [remote 192.168.1.171:58306] Traceback (most recent call last):
+[Tue Mar 14 07:32:27.914299 2023] [wsgi:error] [pid 30888] [remote 192.168.1.171:58306]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 2525, in wsgi_app
+[Tue Mar 14 07:32:27.914312 2023] [wsgi:error] [pid 30888] [remote 192.168.1.171:58306]     response = self.full_dispatch_request()
+[Tue Mar 14 07:32:27.914325 2023] [wsgi:error] [pid 30888] [remote 192.168.1.171:58306]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1822, in full_dispatch_request
+[Tue Mar 14 07:32:27.914338 2023] [wsgi:error] [pid 30888] [remote 192.168.1.171:58306]     rv = self.handle_user_exception(e)
+[Tue Mar 14 07:32:27.914388 2023] [wsgi:error] [pid 30888] [remote 192.168.1.171:58306]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1820, in full_dispatch_request
+[Tue Mar 14 07:32:27.914402 2023] [wsgi:error] [pid 30888] [remote 192.168.1.171:58306]     rv = self.dispatch_request()
+[Tue Mar 14 07:32:27.914414 2023] [wsgi:error] [pid 30888] [remote 192.168.1.171:58306]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/app.py", line 1796, in dispatch_request
+[Tue Mar 14 07:32:27.914427 2023] [wsgi:error] [pid 30888] [remote 192.168.1.171:58306]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Tue Mar 14 07:32:27.914439 2023] [wsgi:error] [pid 30888] [remote 192.168.1.171:58306]   File "/var/www/basic-flask-app/app.py", line 148, in generateDate
+[Tue Mar 14 07:32:27.914451 2023] [wsgi:error] [pid 30888] [remote 192.168.1.171:58306]     return render_template('main.html', result=[session["user"],num1])
+[Tue Mar 14 07:32:27.914463 2023] [wsgi:error] [pid 30888] [remote 192.168.1.171:58306]   File "/home/harry/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/lib/python3.9/site-packages/flask/sessions.py", line 80, in __getitem__
+[Tue Mar 14 07:32:27.914476 2023] [wsgi:error] [pid 30888] [remote 192.168.1.171:58306]     return super().__getitem__(key)
+[Tue Mar 14 07:32:27.914487 2023] [wsgi:error] [pid 30888] [remote 192.168.1.171:58306] KeyError: 'user'
